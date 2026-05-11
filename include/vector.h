@@ -52,5 +52,15 @@ public:
 
     size_t Size() const { return size_; }
 
+    const T& operator[](size_t index) const
+    {
+        return data_[index];
+    }
+
+    T& operator[](size_t index)
+    {
+        return data_[index];
+    }
+
 
 };
