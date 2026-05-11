@@ -37,5 +37,20 @@ public:
 
     }
 
+    void PushBack(const T& value)
+    {
+        
+        if(size_ >= capacity_)
+        {
+            //jei capacity 0, priskiriam 2, jei ne tada padvigubinam capacity
+            ReAlloc(capacity == 0 ? 2 : capacity_ * 2);
+        }
+        //i tuscia vieta priskiriam elementa
+        data_[size_] = value;
+        size_++;
+    }
+
+    size_t Size() const { return size_; }
+
 
 };
