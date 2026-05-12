@@ -1,3 +1,4 @@
+#include <iostream>
 
 template<typename T>
 class Vector
@@ -28,7 +29,14 @@ private:
     }
 
 public:
-    
+    using value_type = T;
+    using reference = value_type&;
+    using const_reference = const value_type&;
+    using size_type = std::size_t;
+    using difference_type = std::ptrdiff_t;
+    using pointer = T*;
+    using const_pointer = const T*;
+
     using iterator = T*;
     using const_iterator = const T*;
     using reverse_iterator = std::reverse_iterator<iterator>;
@@ -41,8 +49,8 @@ public:
         :size_(other.size_),
         capacity_(other.capacity_)
     {
-        data_ = new T[capacity_];
-        for(size_t i = 0; i < size_; i++)
+        data_ = new value_type[capacity_];
+        for(size_type i = 0; i < size_; i++)
         {
             data_[i] = other.data_[i];
         }
@@ -72,9 +80,9 @@ public:
             return *this;
         }
 
-        T* newBlock = new T[other.capacity_];
+        T* newBlock = new value_type[other.capacity_];
 
-        for(size_t i = 0; i < other.size_; i++)
+        for(size_type i = 0; i < other.size_; i++)
         {
             newBlock[i] = other.data_[i];
         }
@@ -103,23 +111,23 @@ public:
     }
 
     //negalima keisti elemento
-    const T& operator[](size_t index) const
+    const_reference operator[](size_type index) const
     {
         return data_[index];
     }
     //galima keisti elementa
-    T& operator[](size_t index)
+    reference operator[](size_type index)
     {
         return data_[index];
     }
     
-    void resize(size_t newSize)
+    void resize(size_type newSize)
     {
         if(newSize > capacity_)
         {
             ReAlloc(newSize);
         }
-        for(size_t i = size_; i < newSize; i++)
+        for(size_type i = size_; i < newSize; i++)
         {
             data_[i] = T{};
         }
@@ -127,12 +135,12 @@ public:
         size_ = newSize;
     }
 
-    void assign(size_t count, const T& value)
+    void assign(size_type count, const_reference value)
     {
         delete[] data_;
-        data_ = new T[count];
+        data_ = new value_type[count];
 
-        for(size_t i = 0; i < count; i++)
+        for(size_type i = 0; i < count; i++)
         {
             data_[i] = value;
         }
@@ -141,7 +149,7 @@ public:
     }
     
 
-    void push_back(const T& value)
+    void push_back(const_reference value)
     {
         
         if(size_ >= capacity_)
@@ -156,9 +164,9 @@ public:
     //GRAZINAMOS REIKSMES
 
     //grazina elemnentu kieki
-    size_t size() const { return size_; }
+    size_type size() const { return size_; }
     //grazina talpa
-    size_t capacity() const { return capacity_; }
+    size_type capacity() const { return capacity_; }
 
     iterator begin() { return data_; }
     const_iterator begin() const { return data_; }
