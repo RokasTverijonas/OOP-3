@@ -28,6 +28,12 @@ private:
     }
 
 public:
+    
+    using iterator = T*;
+    using const_iterator = const T*;
+    using reverse_iterator = std::reverse_iterator<iterator>
+    using cont_reverse_iterator = std::reverse_iterator<const_iterator>
+
     //numatytasis konstruktorius
     Vector() = default;
     //destruktorius
@@ -71,6 +77,33 @@ public:
         return data_[index];
     }
     
+    void resize(size_t newSize)
+    {
+        if(newSize > capacity_)
+        {
+            ReAlloc(newSize);
+        }
+        for(size_t i = size_; i < newSize; i++)
+        {
+            data_[i] = T{};
+        }
+        
+        size_ = newSize;
+    }
+
+    void assign(size_t count, const T& value)
+    {
+        delete[] data_;
+        data_ = new T[count];
+
+        for(size_t i = 0; i < count; i++)
+        {
+            data_[i] = value;
+        }
+        size_ = count;
+        capacity_ = count;
+    }
+    
 
     void push_back(const T& value)
     {
@@ -84,10 +117,24 @@ public:
         data_[size_] = value;
         size_++;
     }
+    //GRAZINAMOS REIKSMES
 
     //grazina elemnentu kieki
     size_t size() const { return size_; }
     //grazina talpa
     size_t capacity() const { return capacity_; }
+
+    iterator begin() { return data_; }
+    const_iterator begin() const { return data_; }
+
+    iterator end() { return data_ + size_; }
+    const_iterator end() const { return data_ + size_; }
+
+    //kai tikrai norime tik skaityti
+    const_iterator cbegin() const noexcept { return data_; }
+    const_iterator cend() const noexcept { return data_ + size_; }
+
+
+
 
 };
