@@ -31,11 +31,32 @@ public:
     
     using iterator = T*;
     using const_iterator = const T*;
-    using reverse_iterator = std::reverse_iterator<iterator>
-    using cont_reverse_iterator = std::reverse_iterator<const_iterator>
+    using reverse_iterator = std::reverse_iterator<iterator>;
+    using const_reverse_iterator = std::reverse_iterator<const_iterator>;
 
     //numatytasis konstruktorius
     Vector() = default;
+    //copy constructor
+    Vector(const Vector& other)
+        :size_(other.size_),
+        capacity_(other.capacity_)
+    {
+        data_ = new T[capacity_];
+        for(size_t i = 0; i < size_; i++)
+        {
+            data_[i] = other.data_[i];
+        }
+    }
+    //move constructor
+    Vector(Vector&& other) noexcept
+        :data_(other.data_),
+        size_(other.size_),
+        capacity_(other.capacity_)
+    {
+        other.data_ = nullptr;
+        other.size_ = 0;
+        other.capacity_ = 0;
+    }
     //destruktorius
     ~Vector() 
     {
@@ -44,7 +65,7 @@ public:
 
     //OPERATORS
     //copy assignment operator
-    Vector& operator=(const Vector& other)
+    Vector& operator=(const Vector& other) 
     {
         if(this == &other)
         {
@@ -62,6 +83,21 @@ public:
         data_ = newBlock;
         size_ = other.size_;
         capacity_ = other.capacity_;
+
+        return *this;
+    }
+    //move assignment operator
+    Vector& operator=(Vector&& other) noexcept
+    {
+        if(this == &other) return *this;
+        size_ = other.size_;
+        capacity_ = other.capacity_;
+        delete[] data_;
+        data_ = other.data_;
+
+        other.data_ = nullptr;
+        other.size_ = 0;
+        other.capacity_ = 0;
 
         return *this;
     }
