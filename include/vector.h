@@ -1,4 +1,6 @@
 #include <iostream>
+#include <cstddef>
+#include <iterator>
 
 template<typename T>
 class Vector
