@@ -161,7 +161,16 @@ public:
         data_[size_] = value;
         size_++;
     }
+
+
     //GRAZINAMOS REIKSMES
+    //pirmas elementas
+    reference front() { return data_[0]; }
+    const_reference front() const { return data_[0]; }
+
+    //paskutinis elementas
+    reference back() { return data_[size_ - 1]; }
+    const_reference back() const { return data_[size_ -1]; }
 
     //grazina elemnentu kieki
     size_type size() const { return size_; }
