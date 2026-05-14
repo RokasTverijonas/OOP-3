@@ -26,4 +26,9 @@ add_executable(gtestai
     tests/testai.cpp
     src/funkcijos.cpp
 )
+add_executable(vecTestai
+    tests/vectorTests.cpp
+)
+
 target_link_libraries(gtestai gtest gtest_main)
+target_link_libraries(vecTestai gtest gtest_main)
