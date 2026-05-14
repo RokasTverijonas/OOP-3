@@ -67,6 +67,19 @@ public:
         other.size_ = 0;
         other.capacity_ = 0;
     }
+    //List constructor
+    Vector(std::initializer_list<value_type> init)
+    {
+        size_ = init.size();
+        capacity_ = size_;
+        data_ = new T[capacity_];
+
+        size_type i = 0;
+        for(const T& value : init) {
+            data_[i] = value;
+            i++;
+        }
+    }
     //destruktorius
     ~Vector() 
     {
@@ -165,7 +178,29 @@ public:
     }
 
 
-    //GRAZINAMOS REIKSMES
+    
+    //grazina rodykle i masyva
+    pointer data() { return data_; }
+    const_pointer data() const { return data_; }
+
+    //grazina elementa is duotos pozicijos
+    reference at(size_type index) 
+    {
+        if(index >= size_)
+        {
+            throw std::out_of_range("Indeksas už vektoriaus ribų!");
+        }
+        return data_[index];
+    }
+    //negalima keisti reiksmiu
+    const_reference at(size_type index) const
+    {
+        if(index >= size_)
+        {
+            throw std::out_of_range("Indeksas už vektoriaus ribų!");
+        }
+        return data_[index];
+    }
     //pirmas elementas
     reference front() { return data_[0]; }
     const_reference front() const { return data_[0]; }
@@ -179,6 +214,7 @@ public:
     //grazina talpa
     size_type capacity() const { return capacity_; }
 
+    //iteratoriai:
     iterator begin() { return data_; }
     const_iterator begin() const { return data_; }
 
