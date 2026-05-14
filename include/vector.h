@@ -22,7 +22,7 @@ private:
 
         for(size_t i = 0; i < size_; i++)
         {
-            newBlock[i] = data_[i];
+            newBlock[i] = std::move(data_[i]);
         }
         delete[] data_;
         data_ = newBlock;
@@ -52,7 +52,7 @@ public:
         capacity_(other.capacity_)
     {
         data_ = new value_type[capacity_];
-        for(size_type i = 0; i < size_; i++)
+        for(std::size_t i = 0; i < size_; i++)
         {
             data_[i] = other.data_[i];
         }
@@ -74,7 +74,7 @@ public:
         capacity_ = size_;
         data_ = new T[capacity_];
 
-        size_type i = 0;
+        std::size_t i = 0;
         for(const T& value : init) {
             data_[i] = value;
             i++;
@@ -97,7 +97,7 @@ public:
 
         T* newBlock = new value_type[other.capacity_];
 
-        for(size_type i = 0; i < other.size_; i++)
+        for(std::size_t i = 0; i < other.size_; i++)
         {
             newBlock[i] = other.data_[i];
         }
@@ -142,7 +142,7 @@ public:
         {
             ReAlloc(newSize);
         }
-        for(size_type i = size_; i < newSize; i++)
+        for(std::size_t i = size_; i < newSize; i++)
         {
             data_[i] = T{};
         }
@@ -155,7 +155,7 @@ public:
         delete[] data_;
         data_ = new value_type[count];
 
-        for(size_type i = 0; i < count; i++)
+        for(std::size_t i = 0; i < count; i++)
         {
             data_[i] = value;
         }
@@ -203,18 +203,18 @@ public:
 
     iterator insert(const_iterator pos, const_reference value)
     {
-        size_type index = pos - begin();
+        std::size_t index = pos - begin();
 
         if(size_ >= capacity_)
         {
             ReAlloc(capacity_ == 0 ? 2 : capacity_ * 2);
         }
-        for(size_type i = size_; i > index; --i)
+        for(std::size_t i = size_; i > index; --i)
         {
             data_[i] = data_[i - 1];
         }
 
-        data[index] = value;
+        data_[index] = value;
         size_++;
 
         return begin() + index;
@@ -224,7 +224,7 @@ public:
     {
         size_type index = pos - begin();
 
-        for(size_type i = index; i < size_ - 1; i++)
+        for(std::size_t i = index; i < size_ - 1; i++)
         {
             data_[i] = data_[i + 1];
         }
@@ -281,6 +281,15 @@ public:
     //grazina talpa
     size_type capacity() const { return capacity_; }
 
+    //rezervuoja vieta
+    void reserve(size_type new_cap)
+    {
+        if(new_cap > capacity_)
+        {
+            ReAlloc(new_cap);
+        }
+    }
+
     //iteratoriai:
     iterator begin() { return data_; }
     const_iterator begin() const { return data_; }
@@ -292,7 +301,39 @@ public:
     const_iterator cbegin() const noexcept { return data_; }
     const_iterator cend() const noexcept { return data_ + size_; }
 
-
-
-
 };
+
+    //non-member functions
+    template<typename T>
+    bool operator==(const Vector<T>& lhs, const Vector<T>& rhs)
+    {
+        if(lhs.size() != rhs.size())
+        {
+            return false;
+        }
+        for(std::size_t i = 0; i < lhs.size(); i++)
+        {
+            if(lhs.at(i) != rhs.at(i))
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    template<typename T>
+    bool operator!=(const Vector<T>& lhs, const Vector<T>& rhs)
+    {
+        if(lhs.size() != rhs.size())
+        {
+            return true;
+        }
+        for(std::size_t i = 0; i < lhs.size(); i++)
+        {
+            if(lhs.at(i) != rhs.at(i))
+            {
+                return true;
+            }
+        }
+        return false;
+    }
