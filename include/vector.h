@@ -177,6 +177,69 @@ public:
         size_++;
     }
 
+    void pop_back()
+    {
+        if(size_ > 0)
+        {
+            --size_;
+        }
+    }
+
+    void shrink_to_fit()
+    {
+        if(capacity_ > size_)
+        {
+            ReAlloc(size_);
+        }
+    }
+
+    void clear()
+    {
+        size_ = 0;
+        capacity_ = 0;
+        delete[] data_;
+        data_ = nullptr;
+    }
+
+    iterator insert(const_iterator pos, const_reference value)
+    {
+        size_type index = pos - begin();
+
+        if(size_ >= capacity_)
+        {
+            ReAlloc(capacity_ == 0 ? 2 : capacity_ * 2);
+        }
+        for(size_type i = size_; i > index; --i)
+        {
+            data_[i] = data_[i - 1];
+        }
+
+        data[index] = value;
+        size_++;
+
+        return begin() + index;
+    }
+
+    iterator erase(const_iterator pos)
+    {
+        size_type index = pos - begin();
+
+        for(size_type i = index; i < size_ - 1; i++)
+        {
+            data_[i] = data_[i + 1];
+        }
+        --size_;
+
+        return begin() + index;
+    }
+
+    void swap(Vector& other)
+    {
+        std::swap(data_, other.data_);
+        std::swap(size_, other.size_);
+        std::swap(capacity_, other.capacity_);
+    }
+
 
     
     //grazina rodykle i masyva
@@ -209,8 +272,12 @@ public:
     reference back() { return data_[size_ - 1]; }
     const_reference back() const { return data_[size_ -1]; }
 
+    //ar tuscias
+    bool empty() const { return size_ == 0; }
+
     //grazina elemnentu kieki
     size_type size() const { return size_; }
+
     //grazina talpa
     size_type capacity() const { return capacity_; }
 
