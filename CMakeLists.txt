@@ -29,6 +29,9 @@ add_executable(gtestai
 add_executable(vecTestai
     tests/vectorTests.cpp
 )
+add_executable(speedTest
+    tests/VectorSpeedTest.cpp
+)
 
 target_link_libraries(gtestai gtest gtest_main)
 target_link_libraries(vecTestai gtest gtest_main)

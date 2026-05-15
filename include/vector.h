@@ -170,7 +170,7 @@ public:
         if(size_ >= capacity_)
         {
             //jei capacity 0, priskiriam 2, jei ne tada padvigubinam capacity
-            ReAlloc(capacity_ == 0 ? 2 : capacity_ * 2);
+            ReAlloc(capacity_ == 0 ? 1 : capacity_ * 2);
         }
         //i tuscia vieta priskiriam elementa
         data_[size_] = value;

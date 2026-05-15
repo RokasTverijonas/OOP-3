@@ -41,6 +41,38 @@ Programa skirta studentų akademinių pasiekimų informacijos apdorojimui. Varto
 |----------------|------|------------| 
 | Intel i5-8265U | 16GB | NVMe 256GB |      
 --------------------------------------
+
+# v3.0 rezultatai
+
+## std::vector ir Vector Spartos analizė
+
+Testas: tuščias konteineris užpildomas `int` elementais naudojant `push_back()`.
+
+| Elementų sk. | std::vector| Vector   |
+|--------------|-----------|-----------|
+| 10,000       | 0.000707s | 0.000441s | 
+| 100,000      | 0.006779s | 0.005101s |
+| 1,000,000    | 0.024967s | 0.010072s |
+| 10,000,000   | 0.138236s | 0.112662s |
+| 100,000,000  | 1.276090s | 1.005180s |
+----------------------------------------
+
+## Atminties perskirstymų palyginimas
+ 
+Testas: konteineris užpildomas 100,000,000 `int` elementų. Perskirstymas įvyksta kai `capacity() == size()`.
+ 
+| Konteineris | Perskirstymų skaičius |
+|-------------|-----------------------|
+| std::vector | 28                    |
+| Vector      | 28                    |
+---------------------------------------
+
+### Išvados
+
+Abu konteineriai atliko **vienodą kiekį perskirstymų (28)**
+
+
+
 # v2.0 rezultatai
 
 Šioje versijoje atliekami testai naudojant **Google Test** framework'ą. Pridėta **Doxygen** dokumentacija. 
