@@ -6,6 +6,7 @@
 #include <sstream>
 #include <iostream>
 #include "zmogus.h"
+#include "vector.h"
 
 /**
  * @class Studentas
@@ -18,7 +19,7 @@
 class Studentas : public Zmogus{
 
 private:
-    std::vector<int> nd_; ///< Namų darbų pažymių sąrašas
+    Vector<int> nd_; ///< Namų darbų pažymių sąrašas
     int egzaminas_; ///< Egzamino pažymys
     double galutinisVid_; ///< Galutinis pažymys pagal vidurkį
     double galutinisMed_; ///< Galutinis pažymys pagal medianą
@@ -154,7 +155,7 @@ public:
         ss >> a.vardas_ >> a.pavarde_;
 
         int skaicius;
-        std::vector<int> visi;
+        Vector<int> visi;
 
         while(ss >> skaicius)
         {
@@ -170,7 +171,7 @@ public:
     /**
      * @brief Grąžina namų darbų pažymius
      */
-    const std::vector<int>& getNd() const { return nd_; }
+    const Vector<int>& getNd() const { return nd_; }
 
     /**
      * @brief Grąžina egzamino pažymį
@@ -191,7 +192,7 @@ public:
      * @brief Nustato namų darbų pažymius
      * @param n Pažymių sąrašas
      */
-    void setNd(const std::vector<int>& n) { nd_ = n; }
+    void setNd(const Vector<int>& n) { nd_ = n; }
 
     /**
      * @brief Nustato egzamino pažymį

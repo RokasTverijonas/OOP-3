@@ -13,18 +13,19 @@
 #include <deque>
 #include <chrono>
 #include <iomanip>
+#include "vector.h"
 
 /**
  * @brief Spausdina studentų sąrašą
  * @param A Studentų vektorius
  */
-void spausdinimas(std::vector<Studentas>& A);
+void spausdinimas(Vector<Studentas>& A);
 
 /**
  * @brief Spausina studentų sąrašą ekrane arba faile
  * @param A Studentų vektorius
  */
-void failoSpausdinimas(std::vector<Studentas>& A);
+void failoSpausdinimas(Vector<Studentas>& A);
 
 /**
  * @brief Generuoja studentų failą
@@ -43,7 +44,7 @@ void tyrimasPirmas();
  * @param vargsai Prastai besimokančių studentų vektorius
  * @param kietekai Gerai besimokančių studentų vektorius
  */
-void tyrimasAntras(std::vector<Studentas>& A, std::vector<Studentas>& vargsai, std::vector<Studentas>& kietekai);
+void tyrimasAntras(Vector<Studentas>& A, Vector<Studentas>& vargsai, Vector<Studentas>& kietekai);
 
 
 /**
@@ -74,7 +75,7 @@ void skaitymas(konteineris& A, std::string failas)
         s.setVardas(vardas);
         s.setPavarde(pavarde);
 
-        std::vector<int> pazymiai;
+        Vector<int> pazymiai;
         int x;
         while(ss >> x)
         {
@@ -304,7 +305,7 @@ void StudentuPadalinimas3(konteineris& A, konteineris& vargsai)
 template<typename konteineris>
 void KonteineriuTyrimas(konteineris& A, konteineris& vargsai, konteineris& kietekai, int kriterijus, int strategija)
 {
-    std::vector<int> studKiekis = {1000, 10000, 100000, 1000000, 10000000};
+    Vector<int> studKiekis = {1000, 10000, 100000, 1000000, 10000000};
 
     std::cout << std::left << std::setw(12) << "Studentai" << std::setw(15) << "Skaitymas"
     << std::setw(15) << "Rikiavimas" << std::setw(15) << "skirstymas" 
@@ -340,10 +341,14 @@ void KonteineriuTyrimas(konteineris& A, konteineris& vargsai, konteineris& kiete
         else if(strategija == 2)
         {
             StudentuPadalinimas2(A, vargsai);
+            //kietekai = A;
+            //A.clear();
         }
         else if(strategija == 3)
         {
             StudentuPadalinimas3(A, vargsai);
+            //kietekai = A;
+            //A.clear();
         }
         auto end3 = std::chrono::high_resolution_clock::now();
 
@@ -356,7 +361,7 @@ void KonteineriuTyrimas(konteineris& A, konteineris& vargsai, konteineris& kiete
         << std::setw(15) << diff2.count() << std::setw(15) << diff3.count() 
         << std::setw(15) << visas << std::endl;
 
-        atskiriFailai("studentai" + std::to_string(x) + ".txt", vargsai, kietekai);
+        ///atskiriFailai("studentai" + std::to_string(x) + ".txt", vargsai, kietekai);
 
         
 

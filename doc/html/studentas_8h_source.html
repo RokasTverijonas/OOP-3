@@ -90,192 +90,199 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;sstream&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="zmogus_8h.html">zmogus.h</a>&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classStudentas.html">   18</a></span><span class="keyword">class </span><a class="code hl_class" href="classStudentas.html">Studentas</a> : <span class="keyword">public</span> <a class="code hl_class" href="classZmogus.html">Zmogus</a>{</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    std::vector&lt;int&gt; nd_; </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">int</span> egzaminas_; </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">double</span> galutinisVid_; </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">double</span> galutinisMed_; </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
-<div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classStudentas.html#ab459e995e8c9b24cdc9aec5b09a66539">   30</a></span>    <a class="code hl_function" href="classStudentas.html#ab459e995e8c9b24cdc9aec5b09a66539">Studentas</a>() </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        : <a class="code hl_class" href="classZmogus.html">Zmogus</a>(), egzaminas_(0), galutinisVid_(0.0), galutinisMed_(0.0) {}</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="vector_8h.html">vector.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classStudentas.html">   19</a></span><span class="keyword">class </span><a class="code hl_class" href="classStudentas.html">Studentas</a> : <span class="keyword">public</span> <a class="code hl_class" href="classZmogus.html">Zmogus</a>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_class" href="classVector.html">Vector&lt;int&gt;</a> nd_; </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">int</span> egzaminas_; </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">double</span> galutinisVid_; </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">double</span> galutinisMed_; </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classStudentas.html#ab459e995e8c9b24cdc9aec5b09a66539">   31</a></span>    <a class="code hl_function" href="classStudentas.html#ab459e995e8c9b24cdc9aec5b09a66539">Studentas</a>() </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        : <a class="code hl_class" href="classZmogus.html">Zmogus</a>(), egzaminas_(0), galutinisVid_(0.0), galutinisMed_(0.0) {}</div>
 </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classStudentas.html#a80eb5166fdaf9a1acf5b7249e8b302ed">   38</a></span>    <a class="code hl_function" href="classStudentas.html#a80eb5166fdaf9a1acf5b7249e8b302ed">Studentas</a>(<span class="keyword">const</span> std::string&amp; v, <span class="keyword">const</span> std::string&amp; p)</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        : <a class="code hl_class" href="classZmogus.html">Zmogus</a>(v, p), egzaminas_(0), galutinisVid_(0.0), galutinisMed_(0.0) {}</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00039" data-start="{" data-end="}">
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classStudentas.html#a80eb5166fdaf9a1acf5b7249e8b302ed">   39</a></span>    <a class="code hl_function" href="classStudentas.html#a80eb5166fdaf9a1acf5b7249e8b302ed">Studentas</a>(<span class="keyword">const</span> std::string&amp; v, <span class="keyword">const</span> std::string&amp; p)</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        : <a class="code hl_class" href="classZmogus.html">Zmogus</a>(v, p), egzaminas_(0), galutinisVid_(0.0), galutinisMed_(0.0) {}</div>
 </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="foldopen" id="foldopen00044" data-start="{" data-end="}">
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classStudentas.html#a1842a8cc1832df3ff02680383f473d98">   44</a></span>    <a class="code hl_function" href="classStudentas.html#a1842a8cc1832df3ff02680383f473d98">~Studentas</a>()<span class="keyword"> override</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <a class="code hl_variable" href="classZmogus.html#a80e72cd553492344884a264a72ce33d2">vardas_</a>.clear();</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <a class="code hl_variable" href="classZmogus.html#a85cd6103a5f887059263d15413a3f081">pavarde_</a>.clear();</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        nd_.clear();</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        egzaminas_ = 0;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        galutinisVid_ = 0.0;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        galutinisMed_ = 0.0;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classStudentas.html#a1842a8cc1832df3ff02680383f473d98">   45</a></span>    <a class="code hl_function" href="classStudentas.html#a1842a8cc1832df3ff02680383f473d98">~Studentas</a>()<span class="keyword"> override</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <a class="code hl_variable" href="classZmogus.html#a80e72cd553492344884a264a72ce33d2">vardas_</a>.clear();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <a class="code hl_variable" href="classZmogus.html#a85cd6103a5f887059263d15413a3f081">pavarde_</a>.clear();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        nd_.<a class="code hl_function" href="classVector.html#a32ad98b135472b0ebc5d6cb3ae5d0085">clear</a>();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        egzaminas_ = 0;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        galutinisVid_ = 0.0;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        galutinisMed_ = 0.0;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
 </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="foldopen" id="foldopen00059" data-start="{" data-end="}">
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classStudentas.html#af39024c89a3d703cbd4d079f19bcd9dd">   59</a></span>    <a class="code hl_function" href="classStudentas.html#af39024c89a3d703cbd4d079f19bcd9dd">Studentas</a>(<span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a> &amp;a)</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        : <a class="code hl_class" href="classZmogus.html">Zmogus</a>(a),</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>          nd_(a.nd_),</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>          egzaminas_(a.egzaminas_),</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>          galutinisVid_(a.galutinisVid_),</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>          galutinisMed_(a.galutinisMed_) {}</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classStudentas.html#af39024c89a3d703cbd4d079f19bcd9dd">   60</a></span>    <a class="code hl_function" href="classStudentas.html#af39024c89a3d703cbd4d079f19bcd9dd">Studentas</a>(<span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a> &amp;a)</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        : <a class="code hl_class" href="classZmogus.html">Zmogus</a>(a),</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>          nd_(a.nd_),</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>          egzaminas_(a.egzaminas_),</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>          galutinisVid_(a.galutinisVid_),</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>          galutinisMed_(a.galutinisMed_) {}</div>
 </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="foldopen" id="foldopen00072" data-start="{" data-end="}">
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classStudentas.html#a5061f9f87bd269e505d2948c8c0b157a">   72</a></span>    <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; <a class="code hl_function" href="classStudentas.html#a5061f9f87bd269e505d2948c8c0b157a">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a> &amp;a)</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    {</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordflow">if</span>(<span class="keyword">this</span> != &amp;a)</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        {</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <a class="code hl_function" href="classZmogus.html#a6467667c6ceb75660eb2193b16191ad4">Zmogus::operator=</a>(a);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            nd_ = a.nd_;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            egzaminas_ = a.egzaminas_;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            galutinisVid_ = a.galutinisVid_;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            galutinisMed_ = a.galutinisMed_;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        }</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="foldopen" id="foldopen00073" data-start="{" data-end="}">
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classStudentas.html#a5061f9f87bd269e505d2948c8c0b157a">   73</a></span>    <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; <a class="code hl_function" href="classStudentas.html#a5061f9f87bd269e505d2948c8c0b157a">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a> &amp;a)</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordflow">if</span>(<span class="keyword">this</span> != &amp;a)</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <a class="code hl_function" href="classZmogus.html#a6467667c6ceb75660eb2193b16191ad4">Zmogus::operator=</a>(a);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            nd_ = a.nd_;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            egzaminas_ = a.egzaminas_;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            galutinisVid_ = a.galutinisVid_;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            galutinisMed_ = a.galutinisMed_;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        }</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    }</div>
 </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="foldopen" id="foldopen00090" data-start="{" data-end="}">
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="classStudentas.html#ae374cbb1abbf636821e1ea402a67b563">   90</a></span>    <a class="code hl_function" href="classStudentas.html#ae374cbb1abbf636821e1ea402a67b563">Studentas</a>(<a class="code hl_class" href="classStudentas.html">Studentas</a>&amp;&amp; a)</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        : <a class="code hl_class" href="classZmogus.html">Zmogus</a>(std::move(a)),</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>          nd_(std::move(a.nd_)),</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>          egzaminas_(std::move(a.egzaminas_)),</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>          galutinisVid_(std::move(a.galutinisVid_)),</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>          galutinisMed_(std::move(a.galutinisMed_)) </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>          {</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            a.egzaminas_ = 0;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            a.galutinisVid_ = 0.0;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            a.galutinisMed_ = 0.0;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>          }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="foldopen" id="foldopen00091" data-start="{" data-end="}">
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classStudentas.html#ae374cbb1abbf636821e1ea402a67b563">   91</a></span>    <a class="code hl_function" href="classStudentas.html#ae374cbb1abbf636821e1ea402a67b563">Studentas</a>(<a class="code hl_class" href="classStudentas.html">Studentas</a>&amp;&amp; a)</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        : <a class="code hl_class" href="classZmogus.html">Zmogus</a>(std::move(a)),</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>          nd_(std::move(a.nd_)),</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>          egzaminas_(std::move(a.egzaminas_)),</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>          galutinisVid_(std::move(a.galutinisVid_)),</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>          galutinisMed_(std::move(a.galutinisMed_)) </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>          {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            a.egzaminas_ = 0;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            a.galutinisVid_ = 0.0;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            a.galutinisMed_ = 0.0;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>          }</div>
 </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="foldopen" id="foldopen00107" data-start="{" data-end="}">
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="classStudentas.html#a9669872af622e52511ca103652c5e6f6">  107</a></span>    <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; <a class="code hl_function" href="classStudentas.html#a9669872af622e52511ca103652c5e6f6">operator=</a>(<a class="code hl_class" href="classStudentas.html">Studentas</a>&amp;&amp; a)</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    {</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="keywordflow">if</span>(<span class="keyword">this</span> != &amp;a)</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        {</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            <a class="code hl_function" href="classZmogus.html#a6467667c6ceb75660eb2193b16191ad4">Zmogus::operator=</a>(std::move(a));</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            nd_ = std::move(a.nd_);</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            egzaminas_ = std::move(a.egzaminas_);</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            galutinisVid_ = std::move(a.galutinisVid_);</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            galutinisMed_ = std::move(a.galutinisMed_);</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            a.egzaminas_ = 0;</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            a.galutinisVid_ = 0.0;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            a.galutinisMed_ = 0.0;</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        }</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    }</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="foldopen" id="foldopen00108" data-start="{" data-end="}">
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="classStudentas.html#a9669872af622e52511ca103652c5e6f6">  108</a></span>    <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; <a class="code hl_function" href="classStudentas.html#a9669872af622e52511ca103652c5e6f6">operator=</a>(<a class="code hl_class" href="classStudentas.html">Studentas</a>&amp;&amp; a)</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    {</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <span class="keywordflow">if</span>(<span class="keyword">this</span> != &amp;a)</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            <a class="code hl_function" href="classZmogus.html#a6467667c6ceb75660eb2193b16191ad4">Zmogus::operator=</a>(std::move(a));</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            nd_ = std::move(a.nd_);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            egzaminas_ = std::move(a.egzaminas_);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            galutinisVid_ = std::move(a.galutinisVid_);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            galutinisMed_ = std::move(a.galutinisMed_);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            a.egzaminas_ = 0;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            a.galutinisVid_ = 0.0;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            a.galutinisMed_ = 0.0;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        }</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    }</div>
 </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="foldopen" id="foldopen00132" data-start="{" data-end="};">
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="classStudentas.html#a26ac513d532bcd006bc6e2f40d44fc61">  132</a></span>    <span class="keyword">friend</span> std::ostream&amp; <a class="code hl_friend" href="classStudentas.html#a26ac513d532bcd006bc6e2f40d44fc61">operator&lt;&lt;</a>(std::ostream&amp; out, <span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; a)</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    {</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        out &lt;&lt; a.<a class="code hl_variable" href="classZmogus.html#a80e72cd553492344884a264a72ce33d2">vardas_</a> &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; a.<a class="code hl_variable" href="classZmogus.html#a85cd6103a5f887059263d15413a3f081">pavarde_</a> &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i : a.nd_)</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        {</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            out &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        }</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        out &lt;&lt; a.egzaminas_;</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        <span class="keywordflow">return</span> out;</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    }</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="foldopen" id="foldopen00133" data-start="{" data-end="};">
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="classStudentas.html#a26ac513d532bcd006bc6e2f40d44fc61">  133</a></span>    <span class="keyword">friend</span> std::ostream&amp; <a class="code hl_friend" href="classStudentas.html#a26ac513d532bcd006bc6e2f40d44fc61">operator&lt;&lt;</a>(std::ostream&amp; out, <span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; a)</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    {</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        out &lt;&lt; a.<a class="code hl_variable" href="classZmogus.html#a80e72cd553492344884a264a72ce33d2">vardas_</a> &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; a.<a class="code hl_variable" href="classZmogus.html#a85cd6103a5f887059263d15413a3f081">pavarde_</a> &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i : a.nd_)</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        {</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            out &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        }</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        out &lt;&lt; a.egzaminas_;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        <span class="keywordflow">return</span> out;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    }</div>
 </div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
-<div class="foldopen" id="foldopen00149" data-start="{" data-end="};">
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="classStudentas.html#a8eab0602793087daabe2d635736ad903">  149</a></span>    <span class="keyword">friend</span> std::istream&amp; <a class="code hl_friend" href="classStudentas.html#a8eab0602793087daabe2d635736ad903">operator&gt;&gt;</a>(std::istream&amp; in, <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; a)</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    {</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        std::string eilute;</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        std::getline(in, eilute);</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        std::stringstream ss(eilute);</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        ss &gt;&gt; a.<a class="code hl_variable" href="classZmogus.html#a80e72cd553492344884a264a72ce33d2">vardas_</a> &gt;&gt; a.<a class="code hl_variable" href="classZmogus.html#a85cd6103a5f887059263d15413a3f081">pavarde_</a>;</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <span class="keywordtype">int</span> skaicius;</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        std::vector&lt;int&gt; visi;</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        <span class="keywordflow">while</span>(ss &gt;&gt; skaicius)</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        {</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            visi.push_back(skaicius);</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        }</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        a.egzaminas_  = visi.back();</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        visi.pop_back();</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        a.nd_ = visi;</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <span class="keywordflow">return</span> in;</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    }</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="foldopen" id="foldopen00150" data-start="{" data-end="};">
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="classStudentas.html#a8eab0602793087daabe2d635736ad903">  150</a></span>    <span class="keyword">friend</span> std::istream&amp; <a class="code hl_friend" href="classStudentas.html#a8eab0602793087daabe2d635736ad903">operator&gt;&gt;</a>(std::istream&amp; in, <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; a)</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    {</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        std::string eilute;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        std::getline(in, eilute);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        std::stringstream ss(eilute);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        ss &gt;&gt; a.<a class="code hl_variable" href="classZmogus.html#a80e72cd553492344884a264a72ce33d2">vardas_</a> &gt;&gt; a.<a class="code hl_variable" href="classZmogus.html#a85cd6103a5f887059263d15413a3f081">pavarde_</a>;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <span class="keywordtype">int</span> skaicius;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <a class="code hl_class" href="classVector.html">Vector&lt;int&gt;</a> visi;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <span class="keywordflow">while</span>(ss &gt;&gt; skaicius)</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        {</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>            visi.<a class="code hl_function" href="classVector.html#a28f3da8ad294c0d45b2b41eb28ce0a8c">push_back</a>(skaicius);</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        }</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        a.egzaminas_  = visi.<a class="code hl_function" href="classVector.html#a8abc3f8273089dadf91fb8eaca0676e6">back</a>();</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        visi.<a class="code hl_function" href="classVector.html#adcba035109febbe55cba2a25f8483ba6">pop_back</a>();</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        a.nd_ = visi;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        <span class="keywordflow">return</span> in;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    }</div>
 </div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    </div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="classStudentas.html#a61b219cdeb4b697c2fa547f4b1a256c2">  173</a></span>    <span class="keyword">const</span> std::vector&lt;int&gt;&amp; <a class="code hl_function" href="classStudentas.html#a61b219cdeb4b697c2fa547f4b1a256c2">getNd</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> nd_; }</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="classStudentas.html#abe38c118e8e899b4de681f1d12adceab">  178</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classStudentas.html#abe38c118e8e899b4de681f1d12adceab">getEgzaminas</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> egzaminas_; }</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="classStudentas.html#a50fb3dcf0be0e97934f41641b85ef9e5">  183</a></span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classStudentas.html#a50fb3dcf0be0e97934f41641b85ef9e5">getGalutinisVid</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> galutinisVid_; }</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="classStudentas.html#a77eed5a443b0e55e85ee4e895a78e71c">  188</a></span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classStudentas.html#a77eed5a443b0e55e85ee4e895a78e71c">getGalutinisMed</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> galutinisMed_; }</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="classStudentas.html#adf274570ff72a9b03e33771c64d285e3">  194</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classStudentas.html#adf274570ff72a9b03e33771c64d285e3">setNd</a>(<span class="keyword">const</span> std::vector&lt;int&gt;&amp; n) { nd_ = n; }</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno"><a class="line" href="classStudentas.html#a659d6bb3cfd109fe095a9a03eaea2667">  200</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classStudentas.html#a659d6bb3cfd109fe095a9a03eaea2667">setEgzaminas</a>(<span class="keywordtype">int</span> e) { egzaminas_ = e; }</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="classStudentas.html#a67bbd3f435be5e0fddc6f16af66f28a7">  206</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classStudentas.html#a67bbd3f435be5e0fddc6f16af66f28a7">setGalutinisVid</a>(<span class="keywordtype">double</span> galVid) { galutinisVid_ = galVid; }</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno"><a class="line" href="classStudentas.html#a075c6c29ce3c36be1aa2237550f18564">  212</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classStudentas.html#a075c6c29ce3c36be1aa2237550f18564">setGalutinisMed</a>(<span class="keywordtype">double</span> galMed) { galutinisMed_ = galMed; }</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classStudentas.html#a2ce65b713e76bbfd19ae1c53750faa3d">vidurkis</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classStudentas.html#a503f18b8bbe14f5501ba97a1dc1c48fc">mediana</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classStudentas.html#a49a2519eb2a57b8c0b572cf414ccc3fc">galutinisVid</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classStudentas.html#ab9dcc63a1ad95f1f34db3e5a96449720">galutinisMed</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="classStudentas.html#a1783f25e81de658828f4d9bde1f3d056">  174</a></span>    <span class="keyword">const</span> <a class="code hl_class" href="classVector.html">Vector&lt;int&gt;</a>&amp; <a class="code hl_function" href="classStudentas.html#a1783f25e81de658828f4d9bde1f3d056">getNd</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> nd_; }</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="classStudentas.html#abe38c118e8e899b4de681f1d12adceab">  179</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classStudentas.html#abe38c118e8e899b4de681f1d12adceab">getEgzaminas</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> egzaminas_; }</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="classStudentas.html#a50fb3dcf0be0e97934f41641b85ef9e5">  184</a></span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classStudentas.html#a50fb3dcf0be0e97934f41641b85ef9e5">getGalutinisVid</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> galutinisVid_; }</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno"><a class="line" href="classStudentas.html#a77eed5a443b0e55e85ee4e895a78e71c">  189</a></span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classStudentas.html#a77eed5a443b0e55e85ee4e895a78e71c">getGalutinisMed</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> galutinisMed_; }</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="classStudentas.html#a55fc8dc4543b6d116e8a8e7fc374ca65">  195</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classStudentas.html#a55fc8dc4543b6d116e8a8e7fc374ca65">setNd</a>(<span class="keyword">const</span> <a class="code hl_class" href="classVector.html">Vector&lt;int&gt;</a>&amp; n) { nd_ = n; }</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="classStudentas.html#a659d6bb3cfd109fe095a9a03eaea2667">  201</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classStudentas.html#a659d6bb3cfd109fe095a9a03eaea2667">setEgzaminas</a>(<span class="keywordtype">int</span> e) { egzaminas_ = e; }</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="classStudentas.html#a67bbd3f435be5e0fddc6f16af66f28a7">  207</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classStudentas.html#a67bbd3f435be5e0fddc6f16af66f28a7">setGalutinisVid</a>(<span class="keywordtype">double</span> galVid) { galutinisVid_ = galVid; }</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="classStudentas.html#a075c6c29ce3c36be1aa2237550f18564">  213</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classStudentas.html#a075c6c29ce3c36be1aa2237550f18564">setGalutinisMed</a>(<span class="keywordtype">double</span> galMed) { galutinisMed_ = galMed; }</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classStudentas.html#a2ce65b713e76bbfd19ae1c53750faa3d">vidurkis</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classStudentas.html#a503f18b8bbe14f5501ba97a1dc1c48fc">mediana</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classStudentas.html#a49a2519eb2a57b8c0b572cf414ccc3fc">galutinisVid</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classStudentas.html#ab9dcc63a1ad95f1f34db3e5a96449720">galutinisMed</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>};</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>};</div>
 </div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassStudentas_html"><div class="ttname"><a href="classStudentas.html">Studentas</a></div><div class="ttdoc">Studento klasė su įvertinimais.</div><div class="ttdef"><b>Definition</b> studentas.h:18</div></div>
-<div class="ttc" id="aclassStudentas_html_a075c6c29ce3c36be1aa2237550f18564"><div class="ttname"><a href="classStudentas.html#a075c6c29ce3c36be1aa2237550f18564">Studentas::setGalutinisMed</a></div><div class="ttdeci">void setGalutinisMed(double galMed)</div><div class="ttdoc">Nustato galutinį pažymį pagal medianą</div><div class="ttdef"><b>Definition</b> studentas.h:212</div></div>
-<div class="ttc" id="aclassStudentas_html_a1842a8cc1832df3ff02680383f473d98"><div class="ttname"><a href="classStudentas.html#a1842a8cc1832df3ff02680383f473d98">Studentas::~Studentas</a></div><div class="ttdeci">~Studentas() override</div><div class="ttdoc">Destruktorius.</div><div class="ttdef"><b>Definition</b> studentas.h:44</div></div>
-<div class="ttc" id="aclassStudentas_html_a26ac513d532bcd006bc6e2f40d44fc61"><div class="ttname"><a href="classStudentas.html#a26ac513d532bcd006bc6e2f40d44fc61">Studentas::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;out, const Studentas &amp;a)</div><div class="ttdoc">Išvesties operatorius.</div><div class="ttdef"><b>Definition</b> studentas.h:132</div></div>
-<div class="ttc" id="aclassStudentas_html_a2ce65b713e76bbfd19ae1c53750faa3d"><div class="ttname"><a href="classStudentas.html#a2ce65b713e76bbfd19ae1c53750faa3d">Studentas::vidurkis</a></div><div class="ttdeci">double vidurkis() const override</div><div class="ttdoc">Apskaičiuoja namų darbų vidurkį</div><div class="ttdef"><b>Definition</b> funkcijos.cpp:45</div></div>
-<div class="ttc" id="aclassStudentas_html_a49a2519eb2a57b8c0b572cf414ccc3fc"><div class="ttname"><a href="classStudentas.html#a49a2519eb2a57b8c0b572cf414ccc3fc">Studentas::galutinisVid</a></div><div class="ttdeci">double galutinisVid() const</div><div class="ttdoc">Apskaičiuoja galutinį pažymį pagal vidurkį</div><div class="ttdef"><b>Definition</b> funkcijos.cpp:83</div></div>
-<div class="ttc" id="aclassStudentas_html_a503f18b8bbe14f5501ba97a1dc1c48fc"><div class="ttname"><a href="classStudentas.html#a503f18b8bbe14f5501ba97a1dc1c48fc">Studentas::mediana</a></div><div class="ttdeci">double mediana() const</div><div class="ttdoc">Apskaičiuoja namų darbų medianą</div><div class="ttdef"><b>Definition</b> funkcijos.cpp:61</div></div>
-<div class="ttc" id="aclassStudentas_html_a5061f9f87bd269e505d2948c8c0b157a"><div class="ttname"><a href="classStudentas.html#a5061f9f87bd269e505d2948c8c0b157a">Studentas::operator=</a></div><div class="ttdeci">Studentas &amp; operator=(const Studentas &amp;a)</div><div class="ttdoc">Kopijos priskyrimo operatorius.</div><div class="ttdef"><b>Definition</b> studentas.h:72</div></div>
-<div class="ttc" id="aclassStudentas_html_a50fb3dcf0be0e97934f41641b85ef9e5"><div class="ttname"><a href="classStudentas.html#a50fb3dcf0be0e97934f41641b85ef9e5">Studentas::getGalutinisVid</a></div><div class="ttdeci">double getGalutinisVid() const</div><div class="ttdoc">Grąžina galutinį pažymį pagal vidurkį</div><div class="ttdef"><b>Definition</b> studentas.h:183</div></div>
-<div class="ttc" id="aclassStudentas_html_a61b219cdeb4b697c2fa547f4b1a256c2"><div class="ttname"><a href="classStudentas.html#a61b219cdeb4b697c2fa547f4b1a256c2">Studentas::getNd</a></div><div class="ttdeci">const std::vector&lt; int &gt; &amp; getNd() const</div><div class="ttdoc">Grąžina namų darbų pažymius.</div><div class="ttdef"><b>Definition</b> studentas.h:173</div></div>
-<div class="ttc" id="aclassStudentas_html_a659d6bb3cfd109fe095a9a03eaea2667"><div class="ttname"><a href="classStudentas.html#a659d6bb3cfd109fe095a9a03eaea2667">Studentas::setEgzaminas</a></div><div class="ttdeci">void setEgzaminas(int e)</div><div class="ttdoc">Nustato egzamino pažymį</div><div class="ttdef"><b>Definition</b> studentas.h:200</div></div>
-<div class="ttc" id="aclassStudentas_html_a67bbd3f435be5e0fddc6f16af66f28a7"><div class="ttname"><a href="classStudentas.html#a67bbd3f435be5e0fddc6f16af66f28a7">Studentas::setGalutinisVid</a></div><div class="ttdeci">void setGalutinisVid(double galVid)</div><div class="ttdoc">Nustato galutinį pažymį pagal vidurkį</div><div class="ttdef"><b>Definition</b> studentas.h:206</div></div>
-<div class="ttc" id="aclassStudentas_html_a77eed5a443b0e55e85ee4e895a78e71c"><div class="ttname"><a href="classStudentas.html#a77eed5a443b0e55e85ee4e895a78e71c">Studentas::getGalutinisMed</a></div><div class="ttdeci">double getGalutinisMed() const</div><div class="ttdoc">Grąžina galutinį pažymį pagal medianą</div><div class="ttdef"><b>Definition</b> studentas.h:188</div></div>
-<div class="ttc" id="aclassStudentas_html_a80eb5166fdaf9a1acf5b7249e8b302ed"><div class="ttname"><a href="classStudentas.html#a80eb5166fdaf9a1acf5b7249e8b302ed">Studentas::Studentas</a></div><div class="ttdeci">Studentas(const std::string &amp;v, const std::string &amp;p)</div><div class="ttdoc">Konstruktorius su parametrais.</div><div class="ttdef"><b>Definition</b> studentas.h:38</div></div>
-<div class="ttc" id="aclassStudentas_html_a8eab0602793087daabe2d635736ad903"><div class="ttname"><a href="classStudentas.html#a8eab0602793087daabe2d635736ad903">Studentas::operator&gt;&gt;</a></div><div class="ttdeci">friend std::istream &amp; operator&gt;&gt;(std::istream &amp;in, Studentas &amp;a)</div><div class="ttdoc">Įvesties operatorius.</div><div class="ttdef"><b>Definition</b> studentas.h:149</div></div>
-<div class="ttc" id="aclassStudentas_html_a9669872af622e52511ca103652c5e6f6"><div class="ttname"><a href="classStudentas.html#a9669872af622e52511ca103652c5e6f6">Studentas::operator=</a></div><div class="ttdeci">Studentas &amp; operator=(Studentas &amp;&amp;a)</div><div class="ttdoc">Perkėlimo priskyrimo operatorius.</div><div class="ttdef"><b>Definition</b> studentas.h:107</div></div>
-<div class="ttc" id="aclassStudentas_html_ab459e995e8c9b24cdc9aec5b09a66539"><div class="ttname"><a href="classStudentas.html#ab459e995e8c9b24cdc9aec5b09a66539">Studentas::Studentas</a></div><div class="ttdeci">Studentas()</div><div class="ttdoc">Default konstruktorius.</div><div class="ttdef"><b>Definition</b> studentas.h:30</div></div>
-<div class="ttc" id="aclassStudentas_html_ab9dcc63a1ad95f1f34db3e5a96449720"><div class="ttname"><a href="classStudentas.html#ab9dcc63a1ad95f1f34db3e5a96449720">Studentas::galutinisMed</a></div><div class="ttdeci">double galutinisMed() const</div><div class="ttdoc">Apskaičiuoja galutinį pažymį pagal medianą</div><div class="ttdef"><b>Definition</b> funkcijos.cpp:87</div></div>
-<div class="ttc" id="aclassStudentas_html_abe38c118e8e899b4de681f1d12adceab"><div class="ttname"><a href="classStudentas.html#abe38c118e8e899b4de681f1d12adceab">Studentas::getEgzaminas</a></div><div class="ttdeci">int getEgzaminas() const</div><div class="ttdoc">Grąžina egzamino pažymį</div><div class="ttdef"><b>Definition</b> studentas.h:178</div></div>
-<div class="ttc" id="aclassStudentas_html_adf274570ff72a9b03e33771c64d285e3"><div class="ttname"><a href="classStudentas.html#adf274570ff72a9b03e33771c64d285e3">Studentas::setNd</a></div><div class="ttdeci">void setNd(const std::vector&lt; int &gt; &amp;n)</div><div class="ttdoc">Nustato namų darbų pažymius.</div><div class="ttdef"><b>Definition</b> studentas.h:194</div></div>
-<div class="ttc" id="aclassStudentas_html_ae374cbb1abbf636821e1ea402a67b563"><div class="ttname"><a href="classStudentas.html#ae374cbb1abbf636821e1ea402a67b563">Studentas::Studentas</a></div><div class="ttdeci">Studentas(Studentas &amp;&amp;a)</div><div class="ttdoc">Perkėlimo konstruktorius.</div><div class="ttdef"><b>Definition</b> studentas.h:90</div></div>
-<div class="ttc" id="aclassStudentas_html_af39024c89a3d703cbd4d079f19bcd9dd"><div class="ttname"><a href="classStudentas.html#af39024c89a3d703cbd4d079f19bcd9dd">Studentas::Studentas</a></div><div class="ttdeci">Studentas(const Studentas &amp;a)</div><div class="ttdoc">Kopijos konstruktorius.</div><div class="ttdef"><b>Definition</b> studentas.h:59</div></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassStudentas_html"><div class="ttname"><a href="classStudentas.html">Studentas</a></div><div class="ttdoc">Studento klasė su įvertinimais.</div><div class="ttdef"><b>Definition</b> studentas.h:19</div></div>
+<div class="ttc" id="aclassStudentas_html_a075c6c29ce3c36be1aa2237550f18564"><div class="ttname"><a href="classStudentas.html#a075c6c29ce3c36be1aa2237550f18564">Studentas::setGalutinisMed</a></div><div class="ttdeci">void setGalutinisMed(double galMed)</div><div class="ttdoc">Nustato galutinį pažymį pagal medianą</div><div class="ttdef"><b>Definition</b> studentas.h:213</div></div>
+<div class="ttc" id="aclassStudentas_html_a1783f25e81de658828f4d9bde1f3d056"><div class="ttname"><a href="classStudentas.html#a1783f25e81de658828f4d9bde1f3d056">Studentas::getNd</a></div><div class="ttdeci">const Vector&lt; int &gt; &amp; getNd() const</div><div class="ttdoc">Grąžina namų darbų pažymius.</div><div class="ttdef"><b>Definition</b> studentas.h:174</div></div>
+<div class="ttc" id="aclassStudentas_html_a1842a8cc1832df3ff02680383f473d98"><div class="ttname"><a href="classStudentas.html#a1842a8cc1832df3ff02680383f473d98">Studentas::~Studentas</a></div><div class="ttdeci">~Studentas() override</div><div class="ttdoc">Destruktorius.</div><div class="ttdef"><b>Definition</b> studentas.h:45</div></div>
+<div class="ttc" id="aclassStudentas_html_a26ac513d532bcd006bc6e2f40d44fc61"><div class="ttname"><a href="classStudentas.html#a26ac513d532bcd006bc6e2f40d44fc61">Studentas::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;out, const Studentas &amp;a)</div><div class="ttdoc">Išvesties operatorius.</div><div class="ttdef"><b>Definition</b> studentas.h:133</div></div>
+<div class="ttc" id="aclassStudentas_html_a2ce65b713e76bbfd19ae1c53750faa3d"><div class="ttname"><a href="classStudentas.html#a2ce65b713e76bbfd19ae1c53750faa3d">Studentas::vidurkis</a></div><div class="ttdeci">double vidurkis() const override</div><div class="ttdoc">Apskaičiuoja namų darbų vidurkį</div><div class="ttdef"><b>Definition</b> funkcijos.cpp:46</div></div>
+<div class="ttc" id="aclassStudentas_html_a49a2519eb2a57b8c0b572cf414ccc3fc"><div class="ttname"><a href="classStudentas.html#a49a2519eb2a57b8c0b572cf414ccc3fc">Studentas::galutinisVid</a></div><div class="ttdeci">double galutinisVid() const</div><div class="ttdoc">Apskaičiuoja galutinį pažymį pagal vidurkį</div><div class="ttdef"><b>Definition</b> funkcijos.cpp:84</div></div>
+<div class="ttc" id="aclassStudentas_html_a503f18b8bbe14f5501ba97a1dc1c48fc"><div class="ttname"><a href="classStudentas.html#a503f18b8bbe14f5501ba97a1dc1c48fc">Studentas::mediana</a></div><div class="ttdeci">double mediana() const</div><div class="ttdoc">Apskaičiuoja namų darbų medianą</div><div class="ttdef"><b>Definition</b> funkcijos.cpp:62</div></div>
+<div class="ttc" id="aclassStudentas_html_a5061f9f87bd269e505d2948c8c0b157a"><div class="ttname"><a href="classStudentas.html#a5061f9f87bd269e505d2948c8c0b157a">Studentas::operator=</a></div><div class="ttdeci">Studentas &amp; operator=(const Studentas &amp;a)</div><div class="ttdoc">Kopijos priskyrimo operatorius.</div><div class="ttdef"><b>Definition</b> studentas.h:73</div></div>
+<div class="ttc" id="aclassStudentas_html_a50fb3dcf0be0e97934f41641b85ef9e5"><div class="ttname"><a href="classStudentas.html#a50fb3dcf0be0e97934f41641b85ef9e5">Studentas::getGalutinisVid</a></div><div class="ttdeci">double getGalutinisVid() const</div><div class="ttdoc">Grąžina galutinį pažymį pagal vidurkį</div><div class="ttdef"><b>Definition</b> studentas.h:184</div></div>
+<div class="ttc" id="aclassStudentas_html_a55fc8dc4543b6d116e8a8e7fc374ca65"><div class="ttname"><a href="classStudentas.html#a55fc8dc4543b6d116e8a8e7fc374ca65">Studentas::setNd</a></div><div class="ttdeci">void setNd(const Vector&lt; int &gt; &amp;n)</div><div class="ttdoc">Nustato namų darbų pažymius.</div><div class="ttdef"><b>Definition</b> studentas.h:195</div></div>
+<div class="ttc" id="aclassStudentas_html_a659d6bb3cfd109fe095a9a03eaea2667"><div class="ttname"><a href="classStudentas.html#a659d6bb3cfd109fe095a9a03eaea2667">Studentas::setEgzaminas</a></div><div class="ttdeci">void setEgzaminas(int e)</div><div class="ttdoc">Nustato egzamino pažymį</div><div class="ttdef"><b>Definition</b> studentas.h:201</div></div>
+<div class="ttc" id="aclassStudentas_html_a67bbd3f435be5e0fddc6f16af66f28a7"><div class="ttname"><a href="classStudentas.html#a67bbd3f435be5e0fddc6f16af66f28a7">Studentas::setGalutinisVid</a></div><div class="ttdeci">void setGalutinisVid(double galVid)</div><div class="ttdoc">Nustato galutinį pažymį pagal vidurkį</div><div class="ttdef"><b>Definition</b> studentas.h:207</div></div>
+<div class="ttc" id="aclassStudentas_html_a77eed5a443b0e55e85ee4e895a78e71c"><div class="ttname"><a href="classStudentas.html#a77eed5a443b0e55e85ee4e895a78e71c">Studentas::getGalutinisMed</a></div><div class="ttdeci">double getGalutinisMed() const</div><div class="ttdoc">Grąžina galutinį pažymį pagal medianą</div><div class="ttdef"><b>Definition</b> studentas.h:189</div></div>
+<div class="ttc" id="aclassStudentas_html_a80eb5166fdaf9a1acf5b7249e8b302ed"><div class="ttname"><a href="classStudentas.html#a80eb5166fdaf9a1acf5b7249e8b302ed">Studentas::Studentas</a></div><div class="ttdeci">Studentas(const std::string &amp;v, const std::string &amp;p)</div><div class="ttdoc">Konstruktorius su parametrais.</div><div class="ttdef"><b>Definition</b> studentas.h:39</div></div>
+<div class="ttc" id="aclassStudentas_html_a8eab0602793087daabe2d635736ad903"><div class="ttname"><a href="classStudentas.html#a8eab0602793087daabe2d635736ad903">Studentas::operator&gt;&gt;</a></div><div class="ttdeci">friend std::istream &amp; operator&gt;&gt;(std::istream &amp;in, Studentas &amp;a)</div><div class="ttdoc">Įvesties operatorius.</div><div class="ttdef"><b>Definition</b> studentas.h:150</div></div>
+<div class="ttc" id="aclassStudentas_html_a9669872af622e52511ca103652c5e6f6"><div class="ttname"><a href="classStudentas.html#a9669872af622e52511ca103652c5e6f6">Studentas::operator=</a></div><div class="ttdeci">Studentas &amp; operator=(Studentas &amp;&amp;a)</div><div class="ttdoc">Perkėlimo priskyrimo operatorius.</div><div class="ttdef"><b>Definition</b> studentas.h:108</div></div>
+<div class="ttc" id="aclassStudentas_html_ab459e995e8c9b24cdc9aec5b09a66539"><div class="ttname"><a href="classStudentas.html#ab459e995e8c9b24cdc9aec5b09a66539">Studentas::Studentas</a></div><div class="ttdeci">Studentas()</div><div class="ttdoc">Default konstruktorius.</div><div class="ttdef"><b>Definition</b> studentas.h:31</div></div>
+<div class="ttc" id="aclassStudentas_html_ab9dcc63a1ad95f1f34db3e5a96449720"><div class="ttname"><a href="classStudentas.html#ab9dcc63a1ad95f1f34db3e5a96449720">Studentas::galutinisMed</a></div><div class="ttdeci">double galutinisMed() const</div><div class="ttdoc">Apskaičiuoja galutinį pažymį pagal medianą</div><div class="ttdef"><b>Definition</b> funkcijos.cpp:88</div></div>
+<div class="ttc" id="aclassStudentas_html_abe38c118e8e899b4de681f1d12adceab"><div class="ttname"><a href="classStudentas.html#abe38c118e8e899b4de681f1d12adceab">Studentas::getEgzaminas</a></div><div class="ttdeci">int getEgzaminas() const</div><div class="ttdoc">Grąžina egzamino pažymį</div><div class="ttdef"><b>Definition</b> studentas.h:179</div></div>
+<div class="ttc" id="aclassStudentas_html_ae374cbb1abbf636821e1ea402a67b563"><div class="ttname"><a href="classStudentas.html#ae374cbb1abbf636821e1ea402a67b563">Studentas::Studentas</a></div><div class="ttdeci">Studentas(Studentas &amp;&amp;a)</div><div class="ttdoc">Perkėlimo konstruktorius.</div><div class="ttdef"><b>Definition</b> studentas.h:91</div></div>
+<div class="ttc" id="aclassStudentas_html_af39024c89a3d703cbd4d079f19bcd9dd"><div class="ttname"><a href="classStudentas.html#af39024c89a3d703cbd4d079f19bcd9dd">Studentas::Studentas</a></div><div class="ttdeci">Studentas(const Studentas &amp;a)</div><div class="ttdoc">Kopijos konstruktorius.</div><div class="ttdef"><b>Definition</b> studentas.h:60</div></div>
+<div class="ttc" id="aclassVector_html"><div class="ttname"><a href="classVector.html">Vector</a></div><div class="ttdef"><b>Definition</b> vector.h:11</div></div>
+<div class="ttc" id="aclassVector_html_a28f3da8ad294c0d45b2b41eb28ce0a8c"><div class="ttname"><a href="classVector.html#a28f3da8ad294c0d45b2b41eb28ce0a8c">Vector::push_back</a></div><div class="ttdeci">void push_back(const_reference value)</div><div class="ttdef"><b>Definition</b> vector.h:171</div></div>
+<div class="ttc" id="aclassVector_html_a32ad98b135472b0ebc5d6cb3ae5d0085"><div class="ttname"><a href="classVector.html#a32ad98b135472b0ebc5d6cb3ae5d0085">Vector::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition</b> vector.h:200</div></div>
+<div class="ttc" id="aclassVector_html_a8abc3f8273089dadf91fb8eaca0676e6"><div class="ttname"><a href="classVector.html#a8abc3f8273089dadf91fb8eaca0676e6">Vector::back</a></div><div class="ttdeci">reference back()</div><div class="ttdef"><b>Definition</b> vector.h:314</div></div>
+<div class="ttc" id="aclassVector_html_adcba035109febbe55cba2a25f8483ba6"><div class="ttname"><a href="classVector.html#adcba035109febbe55cba2a25f8483ba6">Vector::pop_back</a></div><div class="ttdeci">void pop_back()</div><div class="ttdef"><b>Definition</b> vector.h:184</div></div>
 <div class="ttc" id="aclassZmogus_html"><div class="ttname"><a href="classZmogus.html">Zmogus</a></div><div class="ttdoc">Abstrakti klasė sauganti vardą ir pavardę</div><div class="ttdef"><b>Definition</b> zmogus.h:12</div></div>
 <div class="ttc" id="aclassZmogus_html_a6467667c6ceb75660eb2193b16191ad4"><div class="ttname"><a href="classZmogus.html#a6467667c6ceb75660eb2193b16191ad4">Zmogus::operator=</a></div><div class="ttdeci">Zmogus &amp; operator=(const Zmogus &amp;a)</div><div class="ttdoc">Kopijos priskyrimo operatorius.</div><div class="ttdef"><b>Definition</b> zmogus.h:51</div></div>
 <div class="ttc" id="aclassZmogus_html_a80e72cd553492344884a264a72ce33d2"><div class="ttname"><a href="classZmogus.html#a80e72cd553492344884a264a72ce33d2">Zmogus::vardas_</a></div><div class="ttdeci">std::string vardas_</div><div class="ttdoc">Žmogaus vardas.</div><div class="ttdef"><b>Definition</b> zmogus.h:14</div></div>
 <div class="ttc" id="aclassZmogus_html_a85cd6103a5f887059263d15413a3f081"><div class="ttname"><a href="classZmogus.html#a85cd6103a5f887059263d15413a3f081">Zmogus::pavarde_</a></div><div class="ttdeci">std::string pavarde_</div><div class="ttdoc">Žmogaus pavardė</div><div class="ttdef"><b>Definition</b> zmogus.h:15</div></div>
+<div class="ttc" id="avector_8h_html"><div class="ttname"><a href="vector_8h.html">vector.h</a></div></div>
 <div class="ttc" id="azmogus_8h_html"><div class="ttname"><a href="zmogus_8h.html">zmogus.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

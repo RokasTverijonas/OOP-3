@@ -4,6 +4,7 @@
 #include <string>
 #include <sstream>
 #include <gtest/gtest.h>
+#include "vector.h"
 
 TEST(StudentasClassTest, DefaultConstructor)
 {
@@ -17,7 +18,7 @@ TEST(StudentasClassTest, DefaultConstructor)
 TEST(SudentasClassTest, CopyConstructor)
 {
     Studentas s;
-    std::vector<int> temp = {6,8,9}; 
+    Vector<int> temp = {6,8,9}; 
     s.setVardas("vardas");
     s.setPavarde("Pavarde");
     s.setNd(temp);
@@ -35,7 +36,7 @@ TEST(SudentasClassTest, CopyConstructor)
 TEST(StudentasClassTest, CopyAssignment)
 {
     Studentas s;
-    std::vector<int> temp = {6,8,9}; 
+    Vector<int> temp = {6,8,9}; 
     s.setVardas("vardas");
     s.setPavarde("Pavarde");
     s.setNd(temp);
@@ -54,7 +55,7 @@ TEST(StudentasClassTest, CopyAssignment)
 TEST(StudentasClassTest, MoveConstructor)
 {
     Studentas s;
-    std::vector<int> temp = {6,8,9}; 
+    Vector<int> temp = {6,8,9}; 
     s.setVardas("vardas");
     s.setPavarde("Pavarde");
     s.setNd(temp);
@@ -76,7 +77,7 @@ TEST(StudentasClassTest, MoveConstructor)
 TEST(StudentasClassTest, MoveAssignment)
 {
     Studentas s;
-    std::vector<int> temp = {6,8,9}; 
+    Vector<int> temp = {6,8,9}; 
     s.setVardas("vardas");
     s.setPavarde("Pavarde");
     s.setNd(temp);
@@ -101,7 +102,7 @@ TEST(StudentasClassTest, Destructor)
 {
     {
     Studentas s;
-    std::vector<int> temp = {6,8,9}; 
+    Vector<int> temp = {6,8,9}; 
     s.setVardas("vardas");
     s.setPavarde("Pavarde");
     s.setNd(temp);
@@ -133,7 +134,7 @@ TEST(StudentasClassTest, InputOutputOperators)
 
 TEST(StudentasClassTest, GalutinioBaloSkaiciavimasVid)
 {
-    std::vector<int> nd = {5,6,7};
+    Vector<int> nd = {5,6,7};
     Studentas s("Vardenis", "Pavardenis");
     s.setNd(nd);
     s.setEgzaminas(6);
@@ -143,7 +144,7 @@ TEST(StudentasClassTest, GalutinioBaloSkaiciavimasVid)
 
 TEST(StudentasClassTest, GalutinioBaloSkaiciavimasMed)
 {
-    std::vector<int> nd = {5,6,7};
+    Vector<int> nd = {5,6,7};
     Studentas s("Vardenis", "Pavardenis");
     s.setNd(nd);
     s.setEgzaminas(6);

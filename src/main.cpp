@@ -7,17 +7,18 @@
 #include "funkcijos.h"
 #include "studentas.h"
 #include "zmogus.h"
+#include "vector.h"
 
 
-const std::vector<std::string> vardai = {"Rokas", "Dziugas", "Kajus", "Dovydas", "Matas", "Simonas", "Mantas", "Kasparas", "Tomas", "Kristupas"};
-const std::vector<std::string> pavardes = {"Brazdeikis" , "Kazlauskas", "Macijauskas", "Sabonis", "Valanciunas", "Tubelis", "Sirvydis", "Ulanovas", "Giedraitis", "Kalnietis"};
+const Vector<std::string> vardai = {"Rokas", "Dziugas", "Kajus", "Dovydas", "Matas", "Simonas", "Mantas", "Kasparas", "Tomas", "Kristupas"};
+const Vector<std::string> pavardes = {"Brazdeikis" , "Kazlauskas", "Macijauskas", "Sabonis", "Valanciunas", "Tubelis", "Sirvydis", "Ulanovas", "Giedraitis", "Kalnietis"};
 
 
 int main(){
     
-    std::vector<Studentas> A;
-    std::vector<Studentas> vargsai;
-    std::vector<Studentas> kietekai;
+    Vector<Studentas> A;
+    Vector<Studentas> vargsai;
+    Vector<Studentas> kietekai;
     srand(time(NULL));
     bool run = true;
     int auto_kiekis = -1;
@@ -80,7 +81,7 @@ int main(){
                     std::cin >> pavarde1;
                     s.setPavarde(pavarde1);
                     int egz;
-                    std::vector<int> temp_nd;
+                    Vector<int> temp_nd;
 
                     if(pasirinkimas == 1)
                     {
@@ -171,7 +172,7 @@ int main(){
                 for(int i = 0; i < m; i++)
                 {
                     Studentas s;
-                    std::vector<int> temp_nd;
+                    Vector<int> temp_nd;
                     s.setVardas(vardai[rand() % vardai.size()]);
                     s.setPavarde(pavardes[rand() % pavardes.size()]);
                     s.setEgzaminas(rand() % 10 + 1);

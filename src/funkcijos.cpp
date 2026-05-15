@@ -6,6 +6,7 @@
 #include <chrono>
 #include "studentas.h"
 #include "funkcijos.h"
+#include "vector.h"
 
 
 /*
@@ -64,7 +65,7 @@ double Studentas::mediana() const
     {
         return 0.0;
     }
-    std::vector<int> temp = nd_;
+    Vector<int> temp = nd_;
     std::sort(temp.begin(), temp.end());
 
     int n = temp.size(); 
@@ -89,7 +90,7 @@ double Studentas::galutinisMed() const
     return 0.4 * mediana() + 0.6 * egzaminas_;
 }
 
-void spausdinimas(std::vector<Studentas>& A)
+void spausdinimas(Vector<Studentas>& A)
 {
     char budas;
     while(true)
@@ -130,7 +131,7 @@ void spausdinimas(std::vector<Studentas>& A)
     } 
 }
 
-void failoSpausdinimas(std::vector<Studentas>& A)
+void failoSpausdinimas(Vector<Studentas>& A)
 {
     char isvedimas;
     while(true)
@@ -214,7 +215,7 @@ void failoGeneravimas(int studKiekis) {
 
 void tyrimasPirmas()
 {
-    std::vector<int> studKiekis = {1000, 10000, 100000, 1000000, 10000000};
+    Vector<int> studKiekis = {1000, 10000, 100000, 1000000, 10000000};
 
     std::cout << std::left << std::setw(22) << "Studentų skaičius" << std::setw(10) << "Laikas" << std::endl;
 
@@ -233,9 +234,9 @@ void tyrimasPirmas()
     }
 }
 
-void tyrimasAntras(std::vector<Studentas>& A, std::vector<Studentas>& vargsai, std::vector<Studentas>& kietekai)
+void tyrimasAntras(Vector<Studentas>& A, Vector<Studentas>& vargsai, Vector<Studentas>& kietekai)
 {
-    std::vector<int> studKiekis = {1000, 10000, 100000, 1000000, 10000000};
+    Vector<int> studKiekis = {1000, 10000, 100000, 1000000, 10000000};
 
     std::cout << std::left << std::setw(12) << "Studentai" << std::setw(15) << "Skaitymas"
     << std::setw(15) << "Padalinimas" << std::setw(15) << "Atskiri f." 
@@ -248,7 +249,7 @@ void tyrimasAntras(std::vector<Studentas>& A, std::vector<Studentas>& vargsai, s
         kietekai.clear();
         A.clear();
         
-        std::vector<Studentas> stud;
+        Vector<Studentas> stud;
         stud.reserve(x);
         //nuskaitymas
         auto start1 = std::chrono::high_resolution_clock::now();

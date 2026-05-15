@@ -97,333 +97,343 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;deque&gt;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;chrono&gt;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;iomanip&gt;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keywordtype">void</span> <a class="code hl_function" href="funkcijos_8h.html#ae90e2d81c5a1ad8197ede4ea5ad7c869">spausdinimas</a>(std::vector&lt;Studentas&gt;&amp; A);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keywordtype">void</span> <a class="code hl_function" href="funkcijos_8h.html#aaa9d3d1216bf26852c8e11bcd0ec75c5">failoSpausdinimas</a>(std::vector&lt;Studentas&gt;&amp; A);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keywordtype">void</span> <a class="code hl_function" href="funkcijos_8h.html#a80deaaebe72ee76610107c425cdc9690">failoGeneravimas</a>(<span class="keywordtype">int</span> studKiekis);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keywordtype">void</span> <a class="code hl_function" href="funkcijos_8h.html#aeb2bc950e5dec2e041256a8d4ee1e202">tyrimasPirmas</a>();</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keywordtype">void</span> <a class="code hl_function" href="funkcijos_8h.html#aa6a0f8ff57d9ca585ad06e30c5d1c775">tyrimasAntras</a>(std::vector&lt;Studentas&gt;&amp; A, std::vector&lt;Studentas&gt;&amp; vargsai, std::vector&lt;Studentas&gt;&amp; kietekai);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="vector_8h.html">vector.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keywordtype">void</span> <a class="code hl_function" href="funkcijos_8h.html#ae0ffef1dff72ad73c8852c13c8030cd3">spausdinimas</a>(<a class="code hl_class" href="classVector.html">Vector&lt;Studentas&gt;</a>&amp; A);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keywordtype">void</span> <a class="code hl_function" href="funkcijos_8h.html#aed7761f40f842e0d6b1142b527ddf36e">failoSpausdinimas</a>(<a class="code hl_class" href="classVector.html">Vector&lt;Studentas&gt;</a>&amp; A);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keywordtype">void</span> <a class="code hl_function" href="funkcijos_8h.html#a80deaaebe72ee76610107c425cdc9690">failoGeneravimas</a>(<span class="keywordtype">int</span> studKiekis);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keywordtype">void</span> <a class="code hl_function" href="funkcijos_8h.html#aeb2bc950e5dec2e041256a8d4ee1e202">tyrimasPirmas</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keywordtype">void</span> <a class="code hl_function" href="funkcijos_8h.html#a31fcef07602199df3c114ab4745011e8">tyrimasAntras</a>(<a class="code hl_class" href="classVector.html">Vector&lt;Studentas&gt;</a>&amp; A, <a class="code hl_class" href="classVector.html">Vector&lt;Studentas&gt;</a>&amp; vargsai, <a class="code hl_class" href="classVector.html">Vector&lt;Studentas&gt;</a>&amp; kietekai);</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> konteineris&gt; </div>
-<div class="foldopen" id="foldopen00056" data-start="{" data-end="}">
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="funkcijos_8h.html#a5f165c021541f5934ea07a975ec1ca82">   56</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="funkcijos_8h.html#a5f165c021541f5934ea07a975ec1ca82">skaitymas</a>(konteineris&amp; A, std::string failas)</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>{</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    std::ifstream input(failas);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">if</span>(!input.is_open())</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    {</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Pasirinkto failo nepavyko atidaryti!&quot;</span>);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    }</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    std::string eilute;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    getline(input, eilute);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordflow">while</span>(getline(input, eilute))</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    {</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        std::stringstream ss(eilute);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <a class="code hl_class" href="classStudentas.html">Studentas</a> s;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        std::string vardas, pavarde;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        ss &gt;&gt; vardas &gt;&gt; pavarde;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        s.<a class="code hl_function" href="classZmogus.html#a1cfb82338adcdbeecccebb8c77b4aaf4">setVardas</a>(vardas);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        s.<a class="code hl_function" href="classZmogus.html#a604c508fa587671a7d1df8f0522c63e9">setPavarde</a>(pavarde);</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        std::vector&lt;int&gt; pazymiai;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordtype">int</span> x;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordflow">while</span>(ss &gt;&gt; x)</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        {</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            pazymiai.push_back(x);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        }</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        s.<a class="code hl_function" href="classStudentas.html#a659d6bb3cfd109fe095a9a03eaea2667">setEgzaminas</a>(pazymiai.back());</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        pazymiai.pop_back();</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> konteineris&gt; </div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="funkcijos_8h.html#a5f165c021541f5934ea07a975ec1ca82">   57</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="funkcijos_8h.html#a5f165c021541f5934ea07a975ec1ca82">skaitymas</a>(konteineris&amp; A, std::string failas)</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>{</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    std::ifstream input(failas);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">if</span>(!input.is_open())</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Pasirinkto failo nepavyko atidaryti!&quot;</span>);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    std::string eilute;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    getline(input, eilute);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">while</span>(getline(input, eilute))</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        std::stringstream ss(eilute);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <a class="code hl_class" href="classStudentas.html">Studentas</a> s;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        std::string vardas, pavarde;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        ss &gt;&gt; vardas &gt;&gt; pavarde;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        s.<a class="code hl_function" href="classZmogus.html#a1cfb82338adcdbeecccebb8c77b4aaf4">setVardas</a>(vardas);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        s.<a class="code hl_function" href="classZmogus.html#a604c508fa587671a7d1df8f0522c63e9">setPavarde</a>(pavarde);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <a class="code hl_class" href="classVector.html">Vector&lt;int&gt;</a> pazymiai;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordtype">int</span> x;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordflow">while</span>(ss &gt;&gt; x)</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            pazymiai.<a class="code hl_function" href="classVector.html#a28f3da8ad294c0d45b2b41eb28ce0a8c">push_back</a>(x);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        }</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        s.<a class="code hl_function" href="classStudentas.html#a659d6bb3cfd109fe095a9a03eaea2667">setEgzaminas</a>(pazymiai.<a class="code hl_function" href="classVector.html#a8abc3f8273089dadf91fb8eaca0676e6">back</a>());</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        pazymiai.<a class="code hl_function" href="classVector.html#adcba035109febbe55cba2a25f8483ba6">pop_back</a>();</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        s.<a class="code hl_function" href="classStudentas.html#adf274570ff72a9b03e33771c64d285e3">setNd</a>(pazymiai);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        s.<a class="code hl_function" href="classStudentas.html#a67bbd3f435be5e0fddc6f16af66f28a7">setGalutinisVid</a>(s.<a class="code hl_function" href="classStudentas.html#a49a2519eb2a57b8c0b572cf414ccc3fc">galutinisVid</a>());</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        s.<a class="code hl_function" href="classStudentas.html#a075c6c29ce3c36be1aa2237550f18564">setGalutinisMed</a>(s.<a class="code hl_function" href="classStudentas.html#ab9dcc63a1ad95f1f34db3e5a96449720">galutinisMed</a>());</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        A.push_back(s);</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    }</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    input.close();</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>}</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        s.<a class="code hl_function" href="classStudentas.html#a55fc8dc4543b6d116e8a8e7fc374ca65">setNd</a>(pazymiai);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        s.<a class="code hl_function" href="classStudentas.html#a67bbd3f435be5e0fddc6f16af66f28a7">setGalutinisVid</a>(s.<a class="code hl_function" href="classStudentas.html#a49a2519eb2a57b8c0b572cf414ccc3fc">galutinisVid</a>());</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        s.<a class="code hl_function" href="classStudentas.html#a075c6c29ce3c36be1aa2237550f18564">setGalutinisMed</a>(s.<a class="code hl_function" href="classStudentas.html#ab9dcc63a1ad95f1f34db3e5a96449720">galutinisMed</a>());</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        A.push_back(s);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    input.close();</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>}</div>
 </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> konteineris&gt;</div>
-<div class="foldopen" id="foldopen00105" data-start="{" data-end="}">
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="funkcijos_8h.html#a1484afd76893770ca093fba8fc958b2f">  105</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="funkcijos_8h.html#a1484afd76893770ca093fba8fc958b2f">atskiriFailai</a>(std::string failas, konteineris&amp; vargsai, konteineris&amp; kietekai)</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>{</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    std::ofstream vargsuf(<span class="stringliteral">&quot;vargsai_&quot;</span> + failas);</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    std::ofstream kietekuf(<span class="stringliteral">&quot;kietekai_&quot;</span> + failas);</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    vargsuf &lt;&lt; std::left &lt;&lt; std::setw(10) &lt;&lt; <span class="stringliteral">&quot;Vardas&quot;</span> &lt;&lt; std::setw(10) &lt;&lt; <span class="stringliteral">&quot;Pavarde&quot;</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    &lt;&lt; std::setw(20) &lt;&lt; <span class="stringliteral">&quot;Galutinis(Vid.)&quot;</span> &lt;&lt; std::setw(20) &lt;&lt; <span class="stringliteral">&quot;Galutinis(Med.)&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    kietekuf &lt;&lt; std::left &lt;&lt; std::setw(15) &lt;&lt; <span class="stringliteral">&quot;Vardas&quot;</span> &lt;&lt; std::setw(20) &lt;&lt; <span class="stringliteral">&quot;Pavarde&quot;</span></div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    &lt;&lt; std::setw(20) &lt;&lt; <span class="stringliteral">&quot;Galutinis(Vid.)&quot;</span> &lt;&lt; std::setw(20) &lt;&lt; <span class="stringliteral">&quot;Galutinis(Med.)&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; s : vargsai)</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    {</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        vargsuf &lt;&lt; std::setw(15) &lt;&lt; s.getVardas() &lt;&lt; std::setw(20) &lt;&lt; s.getPavarde();</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        vargsuf &lt;&lt; std::setw(20) &lt;&lt; std::fixed &lt;&lt; std::setprecision(2) &lt;&lt; s.getGalutinisVid() &lt;&lt; std::setw(20) &lt;&lt; std::fixed &lt;&lt; std::setprecision(2) &lt;&lt; s.getGalutinisMed() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        </div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    }</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordflow">if</span>(!kietekai.empty())</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    {</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; s : kietekai)</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        {</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            kietekuf &lt;&lt; std::setw(15) &lt;&lt; s.getVardas() &lt;&lt; std::setw(20) &lt;&lt; s.getPavarde();</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            kietekuf &lt;&lt; std::setw(20) &lt;&lt; std::fixed &lt;&lt; std::setprecision(2) &lt;&lt; s.getGalutinisVid() &lt;&lt; std::setw(20) &lt;&lt; std::fixed &lt;&lt; std::setprecision(2) &lt;&lt; s.getGalutinisMed() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        }        </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    }</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>}</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> konteineris&gt;</div>
+<div class="foldopen" id="foldopen00106" data-start="{" data-end="}">
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="funkcijos_8h.html#a1484afd76893770ca093fba8fc958b2f">  106</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="funkcijos_8h.html#a1484afd76893770ca093fba8fc958b2f">atskiriFailai</a>(std::string failas, konteineris&amp; vargsai, konteineris&amp; kietekai)</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>{</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    std::ofstream vargsuf(<span class="stringliteral">&quot;vargsai_&quot;</span> + failas);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    std::ofstream kietekuf(<span class="stringliteral">&quot;kietekai_&quot;</span> + failas);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    vargsuf &lt;&lt; std::left &lt;&lt; std::setw(10) &lt;&lt; <span class="stringliteral">&quot;Vardas&quot;</span> &lt;&lt; std::setw(10) &lt;&lt; <span class="stringliteral">&quot;Pavarde&quot;</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    &lt;&lt; std::setw(20) &lt;&lt; <span class="stringliteral">&quot;Galutinis(Vid.)&quot;</span> &lt;&lt; std::setw(20) &lt;&lt; <span class="stringliteral">&quot;Galutinis(Med.)&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    kietekuf &lt;&lt; std::left &lt;&lt; std::setw(15) &lt;&lt; <span class="stringliteral">&quot;Vardas&quot;</span> &lt;&lt; std::setw(20) &lt;&lt; <span class="stringliteral">&quot;Pavarde&quot;</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    &lt;&lt; std::setw(20) &lt;&lt; <span class="stringliteral">&quot;Galutinis(Vid.)&quot;</span> &lt;&lt; std::setw(20) &lt;&lt; <span class="stringliteral">&quot;Galutinis(Med.)&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; s : vargsai)</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    {</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        vargsuf &lt;&lt; std::setw(15) &lt;&lt; s.getVardas() &lt;&lt; std::setw(20) &lt;&lt; s.getPavarde();</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        vargsuf &lt;&lt; std::setw(20) &lt;&lt; std::fixed &lt;&lt; std::setprecision(2) &lt;&lt; s.getGalutinisVid() &lt;&lt; std::setw(20) &lt;&lt; std::fixed &lt;&lt; std::setprecision(2) &lt;&lt; s.getGalutinisMed() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    }</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keywordflow">if</span>(!kietekai.empty())</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    {</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; s : kietekai)</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        {</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            kietekuf &lt;&lt; std::setw(15) &lt;&lt; s.getVardas() &lt;&lt; std::setw(20) &lt;&lt; s.getPavarde();</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            kietekuf &lt;&lt; std::setw(20) &lt;&lt; std::fixed &lt;&lt; std::setprecision(2) &lt;&lt; s.getGalutinisVid() &lt;&lt; std::setw(20) &lt;&lt; std::fixed &lt;&lt; std::setprecision(2) &lt;&lt; s.getGalutinisMed() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        }        </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    }</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>}</div>
 </div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> konteineris&gt;</div>
-<div class="foldopen" id="foldopen00143" data-start="{" data-end="}">
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="funkcijos_8h.html#a1b66f91e024cec1a2da75dd5126717ab">  143</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="funkcijos_8h.html#a1b66f91e024cec1a2da75dd5126717ab">rikiavimas</a>(konteineris&amp; A, <span class="keywordtype">int</span> kriterijus)</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>{</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    </div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keyword">auto</span> byVardas = [](<span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; a, <span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; b)</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    {</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <span class="keywordflow">return</span> a.<a class="code hl_function" href="classZmogus.html#acf4a7481cb123bbb30cb82dd50102ebd">getVardas</a>() &lt; b.getVardas();</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    };</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keyword">auto</span> byPavarde = [](<span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; a, <span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; b)</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    {</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        <span class="keywordflow">return</span> a.<a class="code hl_function" href="classZmogus.html#af6fa0216be160cd70589a193709a0b36">getPavarde</a>() &lt; b.getPavarde();</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    };</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keyword">auto</span> byGalVid = [](<span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; a, <span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; b)</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    {</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <span class="keywordflow">return</span> a.<a class="code hl_function" href="classStudentas.html#a50fb3dcf0be0e97934f41641b85ef9e5">getGalutinisVid</a>() &lt; b.getGalutinisVid();</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    };</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <span class="keyword">auto</span> byGalMed = [](<span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; a, <span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; b)</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    {</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <span class="keywordflow">return</span> a.<a class="code hl_function" href="classStudentas.html#a77eed5a443b0e55e85ee4e895a78e71c">getGalutinisMed</a>() &lt; b.getGalutinisMed();</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    };</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="comment">//Listo rikiavimas</span></div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_same_v&lt;konteineris, std::list&lt;Studentas&gt;&gt;)</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    {</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        <span class="keywordflow">switch</span>(kriterijus)</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        {</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>            <span class="keywordflow">case</span> 1: A.sort(byVardas); <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            <span class="keywordflow">case</span> 2: A.sort(byPavarde); <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            <span class="keywordflow">case</span> 3: A.sort(byGalVid); <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            <span class="keywordflow">case</span> 4: A.sort(byGalMed); <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        }</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    }</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="comment">//Vector arba deque rikiavimas</span></div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    {</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        <span class="keywordflow">switch</span>(kriterijus)</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        {</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>            <span class="keywordflow">case</span> 1: std::sort(A.begin(), A.end(), byVardas); <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>            <span class="keywordflow">case</span> 2: std::sort(A.begin(), A.end(), byPavarde); <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>            <span class="keywordflow">case</span> 3: std::sort(A.begin(), A.end(), byGalVid); <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>            <span class="keywordflow">case</span> 4: std::sort(A.begin(), A.end(), byGalMed); <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        }   </div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    }</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    </div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>}</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> konteineris&gt;</div>
+<div class="foldopen" id="foldopen00144" data-start="{" data-end="}">
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="funkcijos_8h.html#a1b66f91e024cec1a2da75dd5126717ab">  144</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="funkcijos_8h.html#a1b66f91e024cec1a2da75dd5126717ab">rikiavimas</a>(konteineris&amp; A, <span class="keywordtype">int</span> kriterijus)</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>{</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keyword">auto</span> byVardas = [](<span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; a, <span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; b)</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    {</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        <span class="keywordflow">return</span> a.<a class="code hl_function" href="classZmogus.html#acf4a7481cb123bbb30cb82dd50102ebd">getVardas</a>() &lt; b.getVardas();</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    };</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <span class="keyword">auto</span> byPavarde = [](<span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; a, <span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; b)</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    {</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        <span class="keywordflow">return</span> a.<a class="code hl_function" href="classZmogus.html#af6fa0216be160cd70589a193709a0b36">getPavarde</a>() &lt; b.getPavarde();</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    };</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keyword">auto</span> byGalVid = [](<span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; a, <span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; b)</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    {</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <span class="keywordflow">return</span> a.<a class="code hl_function" href="classStudentas.html#a50fb3dcf0be0e97934f41641b85ef9e5">getGalutinisVid</a>() &lt; b.getGalutinisVid();</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    };</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="keyword">auto</span> byGalMed = [](<span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; a, <span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; b)</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    {</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        <span class="keywordflow">return</span> a.<a class="code hl_function" href="classStudentas.html#a77eed5a443b0e55e85ee4e895a78e71c">getGalutinisMed</a>() &lt; b.getGalutinisMed();</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    };</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="comment">//Listo rikiavimas</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_same_v&lt;konteineris, std::list&lt;Studentas&gt;&gt;)</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    {</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <span class="keywordflow">switch</span>(kriterijus)</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        {</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            <span class="keywordflow">case</span> 1: A.sort(byVardas); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            <span class="keywordflow">case</span> 2: A.sort(byPavarde); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            <span class="keywordflow">case</span> 3: A.sort(byGalVid); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            <span class="keywordflow">case</span> 4: A.sort(byGalMed); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        }</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    }</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="comment">//Vector arba deque rikiavimas</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    {</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        <span class="keywordflow">switch</span>(kriterijus)</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        {</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>            <span class="keywordflow">case</span> 1: std::sort(A.begin(), A.end(), byVardas); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>            <span class="keywordflow">case</span> 2: std::sort(A.begin(), A.end(), byPavarde); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>            <span class="keywordflow">case</span> 3: std::sort(A.begin(), A.end(), byGalVid); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>            <span class="keywordflow">case</span> 4: std::sort(A.begin(), A.end(), byGalMed); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        }   </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    }</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>}</div>
 </div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> konteineris&gt;</div>
-<div class="foldopen" id="foldopen00197" data-start="{" data-end="}">
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="funkcijos_8h.html#a793f2b51308066cffb154f76bbcfc39a">  197</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="funkcijos_8h.html#a793f2b51308066cffb154f76bbcfc39a">StudentuPadalinimas</a>( konteineris&amp; A, konteineris&amp; vargsai, konteineris&amp; kietekai)</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>{</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; s : A)</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    {</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        <span class="keywordflow">if</span>(s.getGalutinisVid() &lt; 5.0)</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        {</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            vargsai.push_back(s);</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        }</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        {</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>            kietekai.push_back(s);</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        }</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    }</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    A.clear();</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>}</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> konteineris&gt;</div>
+<div class="foldopen" id="foldopen00198" data-start="{" data-end="}">
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno"><a class="line" href="funkcijos_8h.html#a793f2b51308066cffb154f76bbcfc39a">  198</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="funkcijos_8h.html#a793f2b51308066cffb154f76bbcfc39a">StudentuPadalinimas</a>( konteineris&amp; A, konteineris&amp; vargsai, konteineris&amp; kietekai)</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>{</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; s : A)</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    {</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        <span class="keywordflow">if</span>(s.getGalutinisVid() &lt; 5.0)</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        {</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            vargsai.push_back(s);</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        }</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        {</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            kietekai.push_back(s);</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        }</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    }</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    A.clear();</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>}</div>
 </div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> konteineris&gt;</div>
-<div class="foldopen" id="foldopen00220" data-start="{" data-end="}">
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno"><a class="line" href="funkcijos_8h.html#a9bc3424c573d9a9323d49b2316cc57ef">  220</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="funkcijos_8h.html#a9bc3424c573d9a9323d49b2316cc57ef">StudentuPadalinimas2</a>(konteineris&amp; A, konteineris&amp; vargsai)</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>{</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    </div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_same_v&lt;konteineris, std::list&lt;Studentas&gt;&gt;)</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    {</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        A.sort([](<span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; a, <span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; b){</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>            <span class="keywordflow">return</span> a.<a class="code hl_function" href="classStudentas.html#a50fb3dcf0be0e97934f41641b85ef9e5">getGalutinisVid</a>() &gt; b.<a class="code hl_function" href="classStudentas.html#a50fb3dcf0be0e97934f41641b85ef9e5">getGalutinisVid</a>();</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        });</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    }</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    <span class="keywordflow">else</span> </div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    {</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        std::sort(A.begin(), A.end(), [](<span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; a, <span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; b){</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>            return a.getGalutinisVid() &gt; b.getGalutinisVid();</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        });</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    }</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    <span class="keywordflow">while</span>(A.back().galutinisVid() &lt; 5)</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    {</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        vargsai.push_back(A.back());</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        A.pop_back();</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    }</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    <span class="comment">/*</span></div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="comment">    auto it = A.end();</span></div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="comment"></span> </div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="comment">    while(it != A.begin())</span></div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="comment">    {</span></div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="comment">        --it;</span></div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="comment">        if(it-&gt;getGalutinisVid() &lt; 5)</span></div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="comment">        {</span></div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="comment">            vargsai.push_back(*it);</span></div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="comment">            it = A.erase(it);</span></div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="comment">        }</span></div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="comment">        else{</span></div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="comment">            break;</span></div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="comment">        }</span></div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span><span class="comment">    }*/</span></div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> konteineris&gt;</div>
+<div class="foldopen" id="foldopen00221" data-start="{" data-end="}">
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno"><a class="line" href="funkcijos_8h.html#a9bc3424c573d9a9323d49b2316cc57ef">  221</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="funkcijos_8h.html#a9bc3424c573d9a9323d49b2316cc57ef">StudentuPadalinimas2</a>(konteineris&amp; A, konteineris&amp; vargsai)</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>{</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    </div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_same_v&lt;konteineris, std::list&lt;Studentas&gt;&gt;)</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    {</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>        A.sort([](<span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; a, <span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; b){</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>            <span class="keywordflow">return</span> a.<a class="code hl_function" href="classStudentas.html#a50fb3dcf0be0e97934f41641b85ef9e5">getGalutinisVid</a>() &gt; b.<a class="code hl_function" href="classStudentas.html#a50fb3dcf0be0e97934f41641b85ef9e5">getGalutinisVid</a>();</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>        });</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    }</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <span class="keywordflow">else</span> </div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    {</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        std::sort(A.begin(), A.end(), [](<span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; a, <span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; b){</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>            return a.getGalutinisVid() &gt; b.getGalutinisVid();</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        });</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    }</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="keywordflow">while</span>(A.back().galutinisVid() &lt; 5)</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    {</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        vargsai.push_back(A.back());</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        A.pop_back();</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    }</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    <span class="comment">/*</span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="comment">    auto it = A.end();</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="comment"></span> </div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="comment">    while(it != A.begin())</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="comment">    {</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="comment">        --it;</span></div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="comment">        if(it-&gt;getGalutinisVid() &lt; 5)</span></div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="comment">        {</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="comment">            vargsai.push_back(*it);</span></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="comment">            it = A.erase(it);</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="comment">        }</span></div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="comment">        else{</span></div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="comment">            break;</span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span><span class="comment">        }</span></div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span><span class="comment">    }*/</span></div>
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    </div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    <span class="comment">/*remove_if iskelia konteinerio elementus i jo gala, ties kuriais lambda grazina true</span></div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="comment">    // it yra iteratorius kuri po remove_if rodo i pirma &quot;netikusi&quot; elementa, kuri reikia pasalinti</span></div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="comment">    auto it = remove_if(A.begin(), A.end(), [&amp;vargsai](studentas&amp; a)</span></div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="comment">    {</span></div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="comment">        if(a.galutinisVid &lt; 5.0)</span></div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span><span class="comment">        {</span></div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span><span class="comment">            vargsai.push_back(a);</span></div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="comment">            return true;</span></div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span><span class="comment">        }</span></div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="comment">        return false;</span></div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span><span class="comment">    });</span></div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="comment">    //istrinam pagrindinio konteinerio galo elementus, kurie po remove_if buvo ten sudėti</span></div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="comment">    A.erase(it, A.end());</span></div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><span class="comment">    */</span></div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span> </div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>}</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    </div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    <span class="comment">/*remove_if iskelia konteinerio elementus i jo gala, ties kuriais lambda grazina true</span></div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="comment">    // it yra iteratorius kuri po remove_if rodo i pirma &quot;netikusi&quot; elementa, kuri reikia pasalinti</span></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="comment">    auto it = remove_if(A.begin(), A.end(), [&amp;vargsai](studentas&amp; a)</span></div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="comment">    {</span></div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span><span class="comment">        if(a.galutinisVid &lt; 5.0)</span></div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span><span class="comment">        {</span></div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="comment">            vargsai.push_back(a);</span></div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span><span class="comment">            return true;</span></div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="comment">        }</span></div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span><span class="comment">        return false;</span></div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="comment">    });</span></div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="comment">    //istrinam pagrindinio konteinerio galo elementus, kurie po remove_if buvo ten sudėti</span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><span class="comment">    A.erase(it, A.end());</span></div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="comment">    */</span></div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>}</div>
 </div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> konteineris&gt;</div>
-<div class="foldopen" id="foldopen00282" data-start="{" data-end="}">
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno"><a class="line" href="funkcijos_8h.html#ac3c96cf229b18ed1282a0ffe5568d62d">  282</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="funkcijos_8h.html#ac3c96cf229b18ed1282a0ffe5568d62d">StudentuPadalinimas3</a>(konteineris&amp; A, konteineris&amp; vargsai)</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>{</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    <span class="comment">//grazina iteratoriu it, kuris rodo i antro bloko pirma elementa, kuris pagal partition ir musu salyga buvo false</span></div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    <span class="comment">//konteineris lieka isdeliotas taip: pirmi elementai tie, kurie tenkina salyga, tada po ju eina visi like</span></div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    <span class="keyword">auto</span> it = std::partition(A.begin(), A.end(), [](<span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; a) { return a.getGalutinisVid() &gt;= 5.0; });</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    <span class="comment">//sudeda elementus nuo konteinerio A iteratoriaus iki konteinerio pabaigos i vargsai konteineri</span></div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    vargsai.insert(vargsai.begin(), it, A.end());</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    <span class="comment">//istrina A konteinerio elementus nuo iteratoriaus iki konteinerio pabaigos</span></div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    A.erase(it, A.end());</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>}</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> konteineris&gt;</div>
+<div class="foldopen" id="foldopen00283" data-start="{" data-end="}">
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno"><a class="line" href="funkcijos_8h.html#ac3c96cf229b18ed1282a0ffe5568d62d">  283</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="funkcijos_8h.html#ac3c96cf229b18ed1282a0ffe5568d62d">StudentuPadalinimas3</a>(konteineris&amp; A, konteineris&amp; vargsai)</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>{</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    <span class="comment">//grazina iteratoriu it, kuris rodo i antro bloko pirma elementa, kuris pagal partition ir musu salyga buvo false</span></div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    <span class="comment">//konteineris lieka isdeliotas taip: pirmi elementai tie, kurie tenkina salyga, tada po ju eina visi like</span></div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    <span class="keyword">auto</span> it = std::partition(A.begin(), A.end(), [](<span class="keyword">const</span> <a class="code hl_class" href="classStudentas.html">Studentas</a>&amp; a) { return a.getGalutinisVid() &gt;= 5.0; });</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    <span class="comment">//sudeda elementus nuo konteinerio A iteratoriaus iki konteinerio pabaigos i vargsai konteineri</span></div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    vargsai.insert(vargsai.begin(), it, A.end());</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    <span class="comment">//istrina A konteinerio elementus nuo iteratoriaus iki konteinerio pabaigos</span></div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    A.erase(it, A.end());</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>}</div>
 </div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> konteineris&gt;</div>
-<div class="foldopen" id="foldopen00305" data-start="{" data-end="}">
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno"><a class="line" href="funkcijos_8h.html#af072db4905deabc894b3eed8564e1232">  305</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="funkcijos_8h.html#af072db4905deabc894b3eed8564e1232">KonteineriuTyrimas</a>(konteineris&amp; A, konteineris&amp; vargsai, konteineris&amp; kietekai, <span class="keywordtype">int</span> kriterijus, <span class="keywordtype">int</span> strategija)</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>{</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    std::vector&lt;int&gt; studKiekis = {1000, 10000, 100000, 1000000, 10000000};</div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> </div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    std::cout &lt;&lt; std::left &lt;&lt; std::setw(12) &lt;&lt; <span class="stringliteral">&quot;Studentai&quot;</span> &lt;&lt; std::setw(15) &lt;&lt; <span class="stringliteral">&quot;Skaitymas&quot;</span></div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    &lt;&lt; std::setw(15) &lt;&lt; <span class="stringliteral">&quot;Rikiavimas&quot;</span> &lt;&lt; std::setw(15) &lt;&lt; <span class="stringliteral">&quot;skirstymas&quot;</span> </div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>    &lt;&lt; std::setw(15) &lt;&lt; <span class="stringliteral">&quot;Bendras laikas&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span> </div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span> </div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> konteineris&gt;</div>
+<div class="foldopen" id="foldopen00306" data-start="{" data-end="}">
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno"><a class="line" href="funkcijos_8h.html#af072db4905deabc894b3eed8564e1232">  306</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="funkcijos_8h.html#af072db4905deabc894b3eed8564e1232">KonteineriuTyrimas</a>(konteineris&amp; A, konteineris&amp; vargsai, konteineris&amp; kietekai, <span class="keywordtype">int</span> kriterijus, <span class="keywordtype">int</span> strategija)</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>{</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>    <a class="code hl_class" href="classVector.html">Vector&lt;int&gt;</a> studKiekis = {1000, 10000, 100000, 1000000, 10000000};</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    std::cout &lt;&lt; std::left &lt;&lt; std::setw(12) &lt;&lt; <span class="stringliteral">&quot;Studentai&quot;</span> &lt;&lt; std::setw(15) &lt;&lt; <span class="stringliteral">&quot;Skaitymas&quot;</span></div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>    &lt;&lt; std::setw(15) &lt;&lt; <span class="stringliteral">&quot;Rikiavimas&quot;</span> &lt;&lt; std::setw(15) &lt;&lt; <span class="stringliteral">&quot;skirstymas&quot;</span> </div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    &lt;&lt; std::setw(15) &lt;&lt; <span class="stringliteral">&quot;Bendras laikas&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span> </div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span> x : studKiekis)</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    {</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>        A.clear();</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>        vargsai.clear();</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>        kietekai.clear();</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        </div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>        <span class="comment">//nuskaitymas</span></div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        <span class="keyword">auto</span> start1 = std::chrono::high_resolution_clock::now();</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>        <a class="code hl_function" href="funkcijos_8h.html#a5f165c021541f5934ea07a975ec1ca82">skaitymas</a>(A, <span class="stringliteral">&quot;studentai&quot;</span> + std::to_string(x) + <span class="stringliteral">&quot;.txt&quot;</span>);</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>        <span class="keyword">auto</span> end1 = std::chrono::high_resolution_clock::now();</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span> </div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>        std::chrono::duration&lt;double&gt; diff1 = end1 - start1;</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>        <span class="comment">//rikiavimas</span></div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>        <span class="keyword">auto</span> start2 = std::chrono::high_resolution_clock::now();</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>        <a class="code hl_function" href="funkcijos_8h.html#a1b66f91e024cec1a2da75dd5126717ab">rikiavimas</a>(A, kriterijus);</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>        <span class="keyword">auto</span> end2 = std::chrono::high_resolution_clock::now();</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span> </div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>        std::chrono::duration&lt;double&gt; diff2 = end2 - start2;</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>        <span class="comment">//padalinimas</span></div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>        <span class="keyword">auto</span> start3 = std::chrono::high_resolution_clock::now();</div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>        <span class="keywordflow">if</span>(strategija == 1)</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>        {</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>            <a class="code hl_function" href="funkcijos_8h.html#a793f2b51308066cffb154f76bbcfc39a">StudentuPadalinimas</a>(A, vargsai, kietekai);</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>        }</div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(strategija == 2)</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>        {</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>            <a class="code hl_function" href="funkcijos_8h.html#a9bc3424c573d9a9323d49b2316cc57ef">StudentuPadalinimas2</a>(A, vargsai);</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>        }</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(strategija == 3)</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>        {</div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>            <a class="code hl_function" href="funkcijos_8h.html#ac3c96cf229b18ed1282a0ffe5568d62d">StudentuPadalinimas3</a>(A, vargsai);</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>        }</div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>        <span class="keyword">auto</span> end3 = std::chrono::high_resolution_clock::now();</div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>        std::chrono::duration&lt;double&gt; diff3 = end3 - start3;</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span> </div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>        <span class="comment">//bendras</span></div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>        <span class="keywordtype">double</span> visas = diff1.count() + diff2.count() + diff3.count();</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span> </div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span> x : studKiekis)</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    {</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>        A.<a class="code hl_function" href="classVector.html#a32ad98b135472b0ebc5d6cb3ae5d0085">clear</a>();</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>        vargsai.clear();</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        kietekai.clear();</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>        </div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        <span class="comment">//nuskaitymas</span></div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>        <span class="keyword">auto</span> start1 = std::chrono::high_resolution_clock::now();</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>        <a class="code hl_function" href="funkcijos_8h.html#a5f165c021541f5934ea07a975ec1ca82">skaitymas</a>(A, <span class="stringliteral">&quot;studentai&quot;</span> + std::to_string(x) + <span class="stringliteral">&quot;.txt&quot;</span>);</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>        <span class="keyword">auto</span> end1 = std::chrono::high_resolution_clock::now();</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span> </div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>        std::chrono::duration&lt;double&gt; diff1 = end1 - start1;</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>        <span class="comment">//rikiavimas</span></div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>        <span class="keyword">auto</span> start2 = std::chrono::high_resolution_clock::now();</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>        <a class="code hl_function" href="funkcijos_8h.html#a1b66f91e024cec1a2da75dd5126717ab">rikiavimas</a>(A, kriterijus);</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>        <span class="keyword">auto</span> end2 = std::chrono::high_resolution_clock::now();</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>        std::chrono::duration&lt;double&gt; diff2 = end2 - start2;</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>        <span class="comment">//padalinimas</span></div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>        <span class="keyword">auto</span> start3 = std::chrono::high_resolution_clock::now();</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>        <span class="keywordflow">if</span>(strategija == 1)</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>        {</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>            <a class="code hl_function" href="funkcijos_8h.html#a793f2b51308066cffb154f76bbcfc39a">StudentuPadalinimas</a>(A, vargsai, kietekai);</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>        }</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(strategija == 2)</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>        {</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>            <a class="code hl_function" href="funkcijos_8h.html#a9bc3424c573d9a9323d49b2316cc57ef">StudentuPadalinimas2</a>(A, vargsai);</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>            <span class="comment">//kietekai = A;</span></div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>            <span class="comment">//A.clear();</span></div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>        }</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(strategija == 3)</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>        {</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>            <a class="code hl_function" href="funkcijos_8h.html#ac3c96cf229b18ed1282a0ffe5568d62d">StudentuPadalinimas3</a>(A, vargsai);</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>            <span class="comment">//kietekai = A;</span></div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>            <span class="comment">//A.clear();</span></div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>        }</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>        <span class="keyword">auto</span> end3 = std::chrono::high_resolution_clock::now();</div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span> </div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>        std::cout &lt;&lt; std::left &lt;&lt; std::setw(12) &lt;&lt; x &lt;&lt; std::setw(15) &lt;&lt; diff1.count()</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>        &lt;&lt; std::setw(15) &lt;&lt; diff2.count() &lt;&lt; std::setw(15) &lt;&lt; diff3.count() </div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>        &lt;&lt; std::setw(15) &lt;&lt; visas &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span> </div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>        <a class="code hl_function" href="funkcijos_8h.html#a1484afd76893770ca093fba8fc958b2f">atskiriFailai</a>(<span class="stringliteral">&quot;studentai&quot;</span> + std::to_string(x) + <span class="stringliteral">&quot;.txt&quot;</span>, vargsai, kietekai);</div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span> </div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>        </div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span> </div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>        std::chrono::duration&lt;double&gt; diff3 = end3 - start3;</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>        <span class="comment">//bendras</span></div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>        <span class="keywordtype">double</span> visas = diff1.count() + diff2.count() + diff3.count();</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span> </div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>        std::cout &lt;&lt; std::left &lt;&lt; std::setw(12) &lt;&lt; x &lt;&lt; std::setw(15) &lt;&lt; diff1.count()</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>        &lt;&lt; std::setw(15) &lt;&lt; diff2.count() &lt;&lt; std::setw(15) &lt;&lt; diff3.count() </div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>        &lt;&lt; std::setw(15) &lt;&lt; visas &lt;&lt; std::endl;</div>
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span> </div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>    }</div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>    A.clear();</div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    vargsai.clear();</div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>    kietekai.clear();</div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>}</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span> </div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>        </div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span> </div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>    }</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>    A.clear();</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>    vargsai.clear();</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>    kietekai.clear();</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>}</div>
 </div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span> </div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassStudentas_html"><div class="ttname"><a href="classStudentas.html">Studentas</a></div><div class="ttdoc">Studento klasė su įvertinimais.</div><div class="ttdef"><b>Definition</b> studentas.h:18</div></div>
-<div class="ttc" id="aclassStudentas_html_a075c6c29ce3c36be1aa2237550f18564"><div class="ttname"><a href="classStudentas.html#a075c6c29ce3c36be1aa2237550f18564">Studentas::setGalutinisMed</a></div><div class="ttdeci">void setGalutinisMed(double galMed)</div><div class="ttdoc">Nustato galutinį pažymį pagal medianą</div><div class="ttdef"><b>Definition</b> studentas.h:212</div></div>
-<div class="ttc" id="aclassStudentas_html_a49a2519eb2a57b8c0b572cf414ccc3fc"><div class="ttname"><a href="classStudentas.html#a49a2519eb2a57b8c0b572cf414ccc3fc">Studentas::galutinisVid</a></div><div class="ttdeci">double galutinisVid() const</div><div class="ttdoc">Apskaičiuoja galutinį pažymį pagal vidurkį</div><div class="ttdef"><b>Definition</b> funkcijos.cpp:83</div></div>
-<div class="ttc" id="aclassStudentas_html_a50fb3dcf0be0e97934f41641b85ef9e5"><div class="ttname"><a href="classStudentas.html#a50fb3dcf0be0e97934f41641b85ef9e5">Studentas::getGalutinisVid</a></div><div class="ttdeci">double getGalutinisVid() const</div><div class="ttdoc">Grąžina galutinį pažymį pagal vidurkį</div><div class="ttdef"><b>Definition</b> studentas.h:183</div></div>
-<div class="ttc" id="aclassStudentas_html_a659d6bb3cfd109fe095a9a03eaea2667"><div class="ttname"><a href="classStudentas.html#a659d6bb3cfd109fe095a9a03eaea2667">Studentas::setEgzaminas</a></div><div class="ttdeci">void setEgzaminas(int e)</div><div class="ttdoc">Nustato egzamino pažymį</div><div class="ttdef"><b>Definition</b> studentas.h:200</div></div>
-<div class="ttc" id="aclassStudentas_html_a67bbd3f435be5e0fddc6f16af66f28a7"><div class="ttname"><a href="classStudentas.html#a67bbd3f435be5e0fddc6f16af66f28a7">Studentas::setGalutinisVid</a></div><div class="ttdeci">void setGalutinisVid(double galVid)</div><div class="ttdoc">Nustato galutinį pažymį pagal vidurkį</div><div class="ttdef"><b>Definition</b> studentas.h:206</div></div>
-<div class="ttc" id="aclassStudentas_html_a77eed5a443b0e55e85ee4e895a78e71c"><div class="ttname"><a href="classStudentas.html#a77eed5a443b0e55e85ee4e895a78e71c">Studentas::getGalutinisMed</a></div><div class="ttdeci">double getGalutinisMed() const</div><div class="ttdoc">Grąžina galutinį pažymį pagal medianą</div><div class="ttdef"><b>Definition</b> studentas.h:188</div></div>
-<div class="ttc" id="aclassStudentas_html_ab9dcc63a1ad95f1f34db3e5a96449720"><div class="ttname"><a href="classStudentas.html#ab9dcc63a1ad95f1f34db3e5a96449720">Studentas::galutinisMed</a></div><div class="ttdeci">double galutinisMed() const</div><div class="ttdoc">Apskaičiuoja galutinį pažymį pagal medianą</div><div class="ttdef"><b>Definition</b> funkcijos.cpp:87</div></div>
-<div class="ttc" id="aclassStudentas_html_adf274570ff72a9b03e33771c64d285e3"><div class="ttname"><a href="classStudentas.html#adf274570ff72a9b03e33771c64d285e3">Studentas::setNd</a></div><div class="ttdeci">void setNd(const std::vector&lt; int &gt; &amp;n)</div><div class="ttdoc">Nustato namų darbų pažymius.</div><div class="ttdef"><b>Definition</b> studentas.h:194</div></div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span> </div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassStudentas_html"><div class="ttname"><a href="classStudentas.html">Studentas</a></div><div class="ttdoc">Studento klasė su įvertinimais.</div><div class="ttdef"><b>Definition</b> studentas.h:19</div></div>
+<div class="ttc" id="aclassStudentas_html_a075c6c29ce3c36be1aa2237550f18564"><div class="ttname"><a href="classStudentas.html#a075c6c29ce3c36be1aa2237550f18564">Studentas::setGalutinisMed</a></div><div class="ttdeci">void setGalutinisMed(double galMed)</div><div class="ttdoc">Nustato galutinį pažymį pagal medianą</div><div class="ttdef"><b>Definition</b> studentas.h:213</div></div>
+<div class="ttc" id="aclassStudentas_html_a49a2519eb2a57b8c0b572cf414ccc3fc"><div class="ttname"><a href="classStudentas.html#a49a2519eb2a57b8c0b572cf414ccc3fc">Studentas::galutinisVid</a></div><div class="ttdeci">double galutinisVid() const</div><div class="ttdoc">Apskaičiuoja galutinį pažymį pagal vidurkį</div><div class="ttdef"><b>Definition</b> funkcijos.cpp:84</div></div>
+<div class="ttc" id="aclassStudentas_html_a50fb3dcf0be0e97934f41641b85ef9e5"><div class="ttname"><a href="classStudentas.html#a50fb3dcf0be0e97934f41641b85ef9e5">Studentas::getGalutinisVid</a></div><div class="ttdeci">double getGalutinisVid() const</div><div class="ttdoc">Grąžina galutinį pažymį pagal vidurkį</div><div class="ttdef"><b>Definition</b> studentas.h:184</div></div>
+<div class="ttc" id="aclassStudentas_html_a55fc8dc4543b6d116e8a8e7fc374ca65"><div class="ttname"><a href="classStudentas.html#a55fc8dc4543b6d116e8a8e7fc374ca65">Studentas::setNd</a></div><div class="ttdeci">void setNd(const Vector&lt; int &gt; &amp;n)</div><div class="ttdoc">Nustato namų darbų pažymius.</div><div class="ttdef"><b>Definition</b> studentas.h:195</div></div>
+<div class="ttc" id="aclassStudentas_html_a659d6bb3cfd109fe095a9a03eaea2667"><div class="ttname"><a href="classStudentas.html#a659d6bb3cfd109fe095a9a03eaea2667">Studentas::setEgzaminas</a></div><div class="ttdeci">void setEgzaminas(int e)</div><div class="ttdoc">Nustato egzamino pažymį</div><div class="ttdef"><b>Definition</b> studentas.h:201</div></div>
+<div class="ttc" id="aclassStudentas_html_a67bbd3f435be5e0fddc6f16af66f28a7"><div class="ttname"><a href="classStudentas.html#a67bbd3f435be5e0fddc6f16af66f28a7">Studentas::setGalutinisVid</a></div><div class="ttdeci">void setGalutinisVid(double galVid)</div><div class="ttdoc">Nustato galutinį pažymį pagal vidurkį</div><div class="ttdef"><b>Definition</b> studentas.h:207</div></div>
+<div class="ttc" id="aclassStudentas_html_a77eed5a443b0e55e85ee4e895a78e71c"><div class="ttname"><a href="classStudentas.html#a77eed5a443b0e55e85ee4e895a78e71c">Studentas::getGalutinisMed</a></div><div class="ttdeci">double getGalutinisMed() const</div><div class="ttdoc">Grąžina galutinį pažymį pagal medianą</div><div class="ttdef"><b>Definition</b> studentas.h:189</div></div>
+<div class="ttc" id="aclassStudentas_html_ab9dcc63a1ad95f1f34db3e5a96449720"><div class="ttname"><a href="classStudentas.html#ab9dcc63a1ad95f1f34db3e5a96449720">Studentas::galutinisMed</a></div><div class="ttdeci">double galutinisMed() const</div><div class="ttdoc">Apskaičiuoja galutinį pažymį pagal medianą</div><div class="ttdef"><b>Definition</b> funkcijos.cpp:88</div></div>
+<div class="ttc" id="aclassVector_html"><div class="ttname"><a href="classVector.html">Vector</a></div><div class="ttdef"><b>Definition</b> vector.h:11</div></div>
+<div class="ttc" id="aclassVector_html_a28f3da8ad294c0d45b2b41eb28ce0a8c"><div class="ttname"><a href="classVector.html#a28f3da8ad294c0d45b2b41eb28ce0a8c">Vector::push_back</a></div><div class="ttdeci">void push_back(const_reference value)</div><div class="ttdef"><b>Definition</b> vector.h:171</div></div>
+<div class="ttc" id="aclassVector_html_a32ad98b135472b0ebc5d6cb3ae5d0085"><div class="ttname"><a href="classVector.html#a32ad98b135472b0ebc5d6cb3ae5d0085">Vector::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition</b> vector.h:200</div></div>
+<div class="ttc" id="aclassVector_html_a8abc3f8273089dadf91fb8eaca0676e6"><div class="ttname"><a href="classVector.html#a8abc3f8273089dadf91fb8eaca0676e6">Vector::back</a></div><div class="ttdeci">reference back()</div><div class="ttdef"><b>Definition</b> vector.h:314</div></div>
+<div class="ttc" id="aclassVector_html_adcba035109febbe55cba2a25f8483ba6"><div class="ttname"><a href="classVector.html#adcba035109febbe55cba2a25f8483ba6">Vector::pop_back</a></div><div class="ttdeci">void pop_back()</div><div class="ttdef"><b>Definition</b> vector.h:184</div></div>
 <div class="ttc" id="aclassZmogus_html_a1cfb82338adcdbeecccebb8c77b4aaf4"><div class="ttname"><a href="classZmogus.html#a1cfb82338adcdbeecccebb8c77b4aaf4">Zmogus::setVardas</a></div><div class="ttdeci">void setVardas(const std::string &amp;v)</div><div class="ttdoc">Nustato vardą</div><div class="ttdef"><b>Definition</b> zmogus.h:107</div></div>
 <div class="ttc" id="aclassZmogus_html_a604c508fa587671a7d1df8f0522c63e9"><div class="ttname"><a href="classZmogus.html#a604c508fa587671a7d1df8f0522c63e9">Zmogus::setPavarde</a></div><div class="ttdeci">void setPavarde(const std::string &amp;p)</div><div class="ttdoc">Nustato pavardę</div><div class="ttdef"><b>Definition</b> zmogus.h:112</div></div>
 <div class="ttc" id="aclassZmogus_html_acf4a7481cb123bbb30cb82dd50102ebd"><div class="ttname"><a href="classZmogus.html#acf4a7481cb123bbb30cb82dd50102ebd">Zmogus::getVardas</a></div><div class="ttdeci">const std::string &amp; getVardas() const</div><div class="ttdoc">Grąžina vardą</div><div class="ttdef"><b>Definition</b> zmogus.h:97</div></div>
 <div class="ttc" id="aclassZmogus_html_af6fa0216be160cd70589a193709a0b36"><div class="ttname"><a href="classZmogus.html#af6fa0216be160cd70589a193709a0b36">Zmogus::getPavarde</a></div><div class="ttdeci">const std::string &amp; getPavarde() const</div><div class="ttdoc">Grąžina pavardę</div><div class="ttdef"><b>Definition</b> zmogus.h:101</div></div>
-<div class="ttc" id="afunkcijos_8h_html_a1484afd76893770ca093fba8fc958b2f"><div class="ttname"><a href="funkcijos_8h.html#a1484afd76893770ca093fba8fc958b2f">atskiriFailai</a></div><div class="ttdeci">void atskiriFailai(std::string failas, konteineris &amp;vargsai, konteineris &amp;kietekai)</div><div class="ttdoc">Surašo vargšus ir kietekus į atskirus failus.</div><div class="ttdef"><b>Definition</b> funkcijos.h:105</div></div>
-<div class="ttc" id="afunkcijos_8h_html_a1b66f91e024cec1a2da75dd5126717ab"><div class="ttname"><a href="funkcijos_8h.html#a1b66f91e024cec1a2da75dd5126717ab">rikiavimas</a></div><div class="ttdeci">void rikiavimas(konteineris &amp;A, int kriterijus)</div><div class="ttdoc">Rikiuoja studentus pagal pasirinktą kriterijų</div><div class="ttdef"><b>Definition</b> funkcijos.h:143</div></div>
-<div class="ttc" id="afunkcijos_8h_html_a5f165c021541f5934ea07a975ec1ca82"><div class="ttname"><a href="funkcijos_8h.html#a5f165c021541f5934ea07a975ec1ca82">skaitymas</a></div><div class="ttdeci">void skaitymas(konteineris &amp;A, std::string failas)</div><div class="ttdoc">Nuskaito duomenis iš failo.</div><div class="ttdef"><b>Definition</b> funkcijos.h:56</div></div>
-<div class="ttc" id="afunkcijos_8h_html_a793f2b51308066cffb154f76bbcfc39a"><div class="ttname"><a href="funkcijos_8h.html#a793f2b51308066cffb154f76bbcfc39a">StudentuPadalinimas</a></div><div class="ttdeci">void StudentuPadalinimas(konteineris &amp;A, konteineris &amp;vargsai, konteineris &amp;kietekai)</div><div class="ttdoc">1 strategija - dalina studentus į du atskirus konteinerius</div><div class="ttdef"><b>Definition</b> funkcijos.h:197</div></div>
-<div class="ttc" id="afunkcijos_8h_html_a80deaaebe72ee76610107c425cdc9690"><div class="ttname"><a href="funkcijos_8h.html#a80deaaebe72ee76610107c425cdc9690">failoGeneravimas</a></div><div class="ttdeci">void failoGeneravimas(int studKiekis)</div><div class="ttdoc">Generuoja studentų failą</div><div class="ttdef"><b>Definition</b> funkcijos.cpp:183</div></div>
-<div class="ttc" id="afunkcijos_8h_html_a9bc3424c573d9a9323d49b2316cc57ef"><div class="ttname"><a href="funkcijos_8h.html#a9bc3424c573d9a9323d49b2316cc57ef">StudentuPadalinimas2</a></div><div class="ttdeci">void StudentuPadalinimas2(konteineris &amp;A, konteineris &amp;vargsai)</div><div class="ttdoc">2 strategija - rikiuoja ir išima vargšus iš galo</div><div class="ttdef"><b>Definition</b> funkcijos.h:220</div></div>
-<div class="ttc" id="afunkcijos_8h_html_aa6a0f8ff57d9ca585ad06e30c5d1c775"><div class="ttname"><a href="funkcijos_8h.html#aa6a0f8ff57d9ca585ad06e30c5d1c775">tyrimasAntras</a></div><div class="ttdeci">void tyrimasAntras(std::vector&lt; Studentas &gt; &amp;A, std::vector&lt; Studentas &gt; &amp;vargsai, std::vector&lt; Studentas &gt; &amp;kietekai)</div><div class="ttdoc">Atlieka tyrimą - matuoja nuskaitymo ir padalinimo laiką</div><div class="ttdef"><b>Definition</b> funkcijos.cpp:236</div></div>
-<div class="ttc" id="afunkcijos_8h_html_aaa9d3d1216bf26852c8e11bcd0ec75c5"><div class="ttname"><a href="funkcijos_8h.html#aaa9d3d1216bf26852c8e11bcd0ec75c5">failoSpausdinimas</a></div><div class="ttdeci">void failoSpausdinimas(std::vector&lt; Studentas &gt; &amp;A)</div><div class="ttdoc">Spausina studentų sąrašą ekrane arba faile.</div><div class="ttdef"><b>Definition</b> funkcijos.cpp:133</div></div>
-<div class="ttc" id="afunkcijos_8h_html_ac3c96cf229b18ed1282a0ffe5568d62d"><div class="ttname"><a href="funkcijos_8h.html#ac3c96cf229b18ed1282a0ffe5568d62d">StudentuPadalinimas3</a></div><div class="ttdeci">void StudentuPadalinimas3(konteineris &amp;A, konteineris &amp;vargsai)</div><div class="ttdoc">3 strategija - naudoja partition padalinimui</div><div class="ttdef"><b>Definition</b> funkcijos.h:282</div></div>
-<div class="ttc" id="afunkcijos_8h_html_ae90e2d81c5a1ad8197ede4ea5ad7c869"><div class="ttname"><a href="funkcijos_8h.html#ae90e2d81c5a1ad8197ede4ea5ad7c869">spausdinimas</a></div><div class="ttdeci">void spausdinimas(std::vector&lt; Studentas &gt; &amp;A)</div><div class="ttdoc">Spausdina studentų sąrašą</div><div class="ttdef"><b>Definition</b> funkcijos.cpp:92</div></div>
-<div class="ttc" id="afunkcijos_8h_html_aeb2bc950e5dec2e041256a8d4ee1e202"><div class="ttname"><a href="funkcijos_8h.html#aeb2bc950e5dec2e041256a8d4ee1e202">tyrimasPirmas</a></div><div class="ttdeci">void tyrimasPirmas()</div><div class="ttdoc">Atlieka tyrimą - matuoja failų generavimo laiką</div><div class="ttdef"><b>Definition</b> funkcijos.cpp:215</div></div>
-<div class="ttc" id="afunkcijos_8h_html_af072db4905deabc894b3eed8564e1232"><div class="ttname"><a href="funkcijos_8h.html#af072db4905deabc894b3eed8564e1232">KonteineriuTyrimas</a></div><div class="ttdeci">void KonteineriuTyrimas(konteineris &amp;A, konteineris &amp;vargsai, konteineris &amp;kietekai, int kriterijus, int strategija)</div><div class="ttdoc">Atlieka skirtingų konteinerių greičio tyrimą su skirtingomis strategijomis.</div><div class="ttdef"><b>Definition</b> funkcijos.h:305</div></div>
+<div class="ttc" id="afunkcijos_8h_html_a1484afd76893770ca093fba8fc958b2f"><div class="ttname"><a href="funkcijos_8h.html#a1484afd76893770ca093fba8fc958b2f">atskiriFailai</a></div><div class="ttdeci">void atskiriFailai(std::string failas, konteineris &amp;vargsai, konteineris &amp;kietekai)</div><div class="ttdoc">Surašo vargšus ir kietekus į atskirus failus.</div><div class="ttdef"><b>Definition</b> funkcijos.h:106</div></div>
+<div class="ttc" id="afunkcijos_8h_html_a1b66f91e024cec1a2da75dd5126717ab"><div class="ttname"><a href="funkcijos_8h.html#a1b66f91e024cec1a2da75dd5126717ab">rikiavimas</a></div><div class="ttdeci">void rikiavimas(konteineris &amp;A, int kriterijus)</div><div class="ttdoc">Rikiuoja studentus pagal pasirinktą kriterijų</div><div class="ttdef"><b>Definition</b> funkcijos.h:144</div></div>
+<div class="ttc" id="afunkcijos_8h_html_a31fcef07602199df3c114ab4745011e8"><div class="ttname"><a href="funkcijos_8h.html#a31fcef07602199df3c114ab4745011e8">tyrimasAntras</a></div><div class="ttdeci">void tyrimasAntras(Vector&lt; Studentas &gt; &amp;A, Vector&lt; Studentas &gt; &amp;vargsai, Vector&lt; Studentas &gt; &amp;kietekai)</div><div class="ttdoc">Atlieka tyrimą - matuoja nuskaitymo ir padalinimo laiką</div><div class="ttdef"><b>Definition</b> funkcijos.cpp:237</div></div>
+<div class="ttc" id="afunkcijos_8h_html_a5f165c021541f5934ea07a975ec1ca82"><div class="ttname"><a href="funkcijos_8h.html#a5f165c021541f5934ea07a975ec1ca82">skaitymas</a></div><div class="ttdeci">void skaitymas(konteineris &amp;A, std::string failas)</div><div class="ttdoc">Nuskaito duomenis iš failo.</div><div class="ttdef"><b>Definition</b> funkcijos.h:57</div></div>
+<div class="ttc" id="afunkcijos_8h_html_a793f2b51308066cffb154f76bbcfc39a"><div class="ttname"><a href="funkcijos_8h.html#a793f2b51308066cffb154f76bbcfc39a">StudentuPadalinimas</a></div><div class="ttdeci">void StudentuPadalinimas(konteineris &amp;A, konteineris &amp;vargsai, konteineris &amp;kietekai)</div><div class="ttdoc">1 strategija - dalina studentus į du atskirus konteinerius</div><div class="ttdef"><b>Definition</b> funkcijos.h:198</div></div>
+<div class="ttc" id="afunkcijos_8h_html_a80deaaebe72ee76610107c425cdc9690"><div class="ttname"><a href="funkcijos_8h.html#a80deaaebe72ee76610107c425cdc9690">failoGeneravimas</a></div><div class="ttdeci">void failoGeneravimas(int studKiekis)</div><div class="ttdoc">Generuoja studentų failą</div><div class="ttdef"><b>Definition</b> funkcijos.cpp:184</div></div>
+<div class="ttc" id="afunkcijos_8h_html_a9bc3424c573d9a9323d49b2316cc57ef"><div class="ttname"><a href="funkcijos_8h.html#a9bc3424c573d9a9323d49b2316cc57ef">StudentuPadalinimas2</a></div><div class="ttdeci">void StudentuPadalinimas2(konteineris &amp;A, konteineris &amp;vargsai)</div><div class="ttdoc">2 strategija - rikiuoja ir išima vargšus iš galo</div><div class="ttdef"><b>Definition</b> funkcijos.h:221</div></div>
+<div class="ttc" id="afunkcijos_8h_html_ac3c96cf229b18ed1282a0ffe5568d62d"><div class="ttname"><a href="funkcijos_8h.html#ac3c96cf229b18ed1282a0ffe5568d62d">StudentuPadalinimas3</a></div><div class="ttdeci">void StudentuPadalinimas3(konteineris &amp;A, konteineris &amp;vargsai)</div><div class="ttdoc">3 strategija - naudoja partition padalinimui</div><div class="ttdef"><b>Definition</b> funkcijos.h:283</div></div>
+<div class="ttc" id="afunkcijos_8h_html_ae0ffef1dff72ad73c8852c13c8030cd3"><div class="ttname"><a href="funkcijos_8h.html#ae0ffef1dff72ad73c8852c13c8030cd3">spausdinimas</a></div><div class="ttdeci">void spausdinimas(Vector&lt; Studentas &gt; &amp;A)</div><div class="ttdoc">Spausdina studentų sąrašą</div><div class="ttdef"><b>Definition</b> funkcijos.cpp:93</div></div>
+<div class="ttc" id="afunkcijos_8h_html_aeb2bc950e5dec2e041256a8d4ee1e202"><div class="ttname"><a href="funkcijos_8h.html#aeb2bc950e5dec2e041256a8d4ee1e202">tyrimasPirmas</a></div><div class="ttdeci">void tyrimasPirmas()</div><div class="ttdoc">Atlieka tyrimą - matuoja failų generavimo laiką</div><div class="ttdef"><b>Definition</b> funkcijos.cpp:216</div></div>
+<div class="ttc" id="afunkcijos_8h_html_aed7761f40f842e0d6b1142b527ddf36e"><div class="ttname"><a href="funkcijos_8h.html#aed7761f40f842e0d6b1142b527ddf36e">failoSpausdinimas</a></div><div class="ttdeci">void failoSpausdinimas(Vector&lt; Studentas &gt; &amp;A)</div><div class="ttdoc">Spausina studentų sąrašą ekrane arba faile.</div><div class="ttdef"><b>Definition</b> funkcijos.cpp:134</div></div>
+<div class="ttc" id="afunkcijos_8h_html_af072db4905deabc894b3eed8564e1232"><div class="ttname"><a href="funkcijos_8h.html#af072db4905deabc894b3eed8564e1232">KonteineriuTyrimas</a></div><div class="ttdeci">void KonteineriuTyrimas(konteineris &amp;A, konteineris &amp;vargsai, konteineris &amp;kietekai, int kriterijus, int strategija)</div><div class="ttdoc">Atlieka skirtingų konteinerių greičio tyrimą su skirtingomis strategijomis.</div><div class="ttdef"><b>Definition</b> funkcijos.h:306</div></div>
 <div class="ttc" id="astudentas_8h_html"><div class="ttname"><a href="studentas_8h.html">studentas.h</a></div></div>
+<div class="ttc" id="avector_8h_html"><div class="ttname"><a href="vector_8h.html">vector.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -44,17 +44,34 @@ Programa skirta studentų akademinių pasiekimų informacijos apdorojimui. Varto
 
 # v3.0 rezultatai
 
+## Funkcijos
+
+## `push_back(const T& value)`
+Prideda naują elementą į vektoriaus pabaigą.
+
+## `pop_back()`
+Pašalina paskutinį vektoriaus elementą.
+
+## `resize(size_t newSize)`
+Pakeičia vektoriaus dydį.
+
+## `reserve(size_t new_cap)`
+Rezervuoja papildomą atmintį būsimiems elementams.
+
+## `shrink_to_fit()`
+Sumažina rezervuotą atmintį iki esamo elementų kiekio.
+
 ## std::vector ir Vector Spartos analizė
 
 Testas: tuščias konteineris užpildomas `int` elementais naudojant `push_back()`.
 
 | Elementų sk. | std::vector| Vector   |
 |--------------|-----------|-----------|
-| 10,000       | 0.000707s | 0.000441s | 
-| 100,000      | 0.006779s | 0.005101s |
-| 1,000,000    | 0.024967s | 0.010072s |
-| 10,000,000   | 0.138236s | 0.112662s |
-| 100,000,000  | 1.276090s | 1.005180s |
+| 10000       | 0.000707s | 0.000441s | 
+| 100000      | 0.006779s | 0.005101s |
+| 1000000    | 0.024967s | 0.010072s |
+| 10000000   | 0.138236s | 0.112662s |
+| 100000000  | 1.276090s | 1.005180s |
 ----------------------------------------
 
 ## Atminties perskirstymų palyginimas
@@ -67,9 +84,22 @@ Testas: konteineris užpildomas 100,000,000 `int` elementų. Perskirstymas įvyk
 | Vector      | 28                    |
 ---------------------------------------
 
-### Išvados
+Išvada:
 
 Abu konteineriai atliko **vienodą kiekį perskirstymų (28)**
+
+## Sukurtos Vector klasės naudojimas vietoj std::vector
+
+Testas: Atliekamas konteinerio tyrimas su įvariais studentų kiekiais, naudojant 3 strategiją ir rikiuojant studentus pagal galutinio balo vidurkį
+
+| Studentų sk. | std::vector| Vector   |
+|--------------|-----------|-----------|
+| 1000         | 0.0196432s| 0.027766s | 
+| 10000        | 0.1226442s| 0.155104s |
+| 100000       | 0.751169s | 0.505198s |
+| 1000000      | 7.61402s  | 5.00086s  |
+| 10000000     | 94.8598s  | 57.5679s  |
+----------------------------------------
 
 
 

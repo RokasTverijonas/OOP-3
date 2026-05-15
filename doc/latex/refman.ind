@@ -1,136 +1,264 @@
 \begin{theindex}
 
+  \item {\texorpdfstring{$\sim$}{\string~}Vector}
+    \subitem {Vector$<$ T $>$}, \hyperpage{10}
   \item {\texorpdfstring{$\sim$}{\string~}Zmogus}
-    \subitem {Zmogus}, \hyperpage{8}
+    \subitem {Zmogus}, \hyperpage{16}
 
   \indexspace
 
+  \item {assign}
+    \subitem {Vector$<$ T $>$}, \hyperpage{10}
+  \item {at}
+    \subitem {Vector$<$ T $>$}, \hyperpage{10}
   \item {atskiriFailai}
-    \subitem {funkcijos.h}, \hyperpage{14}
+    \subitem {funkcijos.h}, \hyperpage{20}
+
+  \indexspace
+
+  \item {back}
+    \subitem {Vector$<$ T $>$}, \hyperpage{11}
+  \item {begin}
+    \subitem {Vector$<$ T $>$}, \hyperpage{11}
+
+  \indexspace
+
+  \item {capacity}
+    \subitem {Vector$<$ T $>$}, \hyperpage{11}
+  \item {cbegin}
+    \subitem {Vector$<$ T $>$}, \hyperpage{11}
+  \item {cend}
+    \subitem {Vector$<$ T $>$}, \hyperpage{11}
+  \item {clear}
+    \subitem {Vector$<$ T $>$}, \hyperpage{11}
+  \item {const\_iterator}
+    \subitem {Vector$<$ T $>$}, \hyperpage{8}
+  \item {const\_pointer}
+    \subitem {Vector$<$ T $>$}, \hyperpage{8}
+  \item {const\_reference}
+    \subitem {Vector$<$ T $>$}, \hyperpage{8}
+  \item {const\_reverse\_iterator}
+    \subitem {Vector$<$ T $>$}, \hyperpage{9}
+
+  \indexspace
+
+  \item {data}
+    \subitem {Vector$<$ T $>$}, \hyperpage{11, 12}
+  \item {difference\_type}
+    \subitem {Vector$<$ T $>$}, \hyperpage{9}
+
+  \indexspace
+
+  \item {empty}
+    \subitem {Vector$<$ T $>$}, \hyperpage{12}
+  \item {end}
+    \subitem {Vector$<$ T $>$}, \hyperpage{12}
+  \item {erase}
+    \subitem {Vector$<$ T $>$}, \hyperpage{12}
 
   \indexspace
 
   \item {failoGeneravimas}
-    \subitem {funkcijos.cpp}, \hyperpage{25}
-    \subitem {funkcijos.h}, \hyperpage{14}
+    \subitem {funkcijos.cpp}, \hyperpage{37}
+    \subitem {funkcijos.h}, \hyperpage{20}
   \item {failoSpausdinimas}
-    \subitem {funkcijos.cpp}, \hyperpage{26}
-    \subitem {funkcijos.h}, \hyperpage{15}
+    \subitem {funkcijos.cpp}, \hyperpage{37}
+    \subitem {funkcijos.h}, \hyperpage{21}
+  \item {front}
+    \subitem {Vector$<$ T $>$}, \hyperpage{12}
   \item {funkcijos.cpp}
-    \subitem {failoGeneravimas}, \hyperpage{25}
-    \subitem {failoSpausdinimas}, \hyperpage{26}
-    \subitem {spausdinimas}, \hyperpage{26}
-    \subitem {tyrimasAntras}, \hyperpage{26}
-    \subitem {tyrimasPirmas}, \hyperpage{26}
+    \subitem {failoGeneravimas}, \hyperpage{37}
+    \subitem {failoSpausdinimas}, \hyperpage{37}
+    \subitem {spausdinimas}, \hyperpage{37}
+    \subitem {tyrimasAntras}, \hyperpage{37}
+    \subitem {tyrimasPirmas}, \hyperpage{38}
   \item {funkcijos.h}
-    \subitem {atskiriFailai}, \hyperpage{14}
-    \subitem {failoGeneravimas}, \hyperpage{14}
-    \subitem {failoSpausdinimas}, \hyperpage{15}
-    \subitem {KonteineriuTyrimas}, \hyperpage{15}
-    \subitem {rikiavimas}, \hyperpage{15}
-    \subitem {skaitymas}, \hyperpage{16}
-    \subitem {spausdinimas}, \hyperpage{16}
-    \subitem {StudentuPadalinimas}, \hyperpage{16}
-    \subitem {StudentuPadalinimas2}, \hyperpage{17}
-    \subitem {StudentuPadalinimas3}, \hyperpage{17}
-    \subitem {tyrimasAntras}, \hyperpage{17}
-    \subitem {tyrimasPirmas}, \hyperpage{18}
+    \subitem {atskiriFailai}, \hyperpage{20}
+    \subitem {failoGeneravimas}, \hyperpage{20}
+    \subitem {failoSpausdinimas}, \hyperpage{21}
+    \subitem {KonteineriuTyrimas}, \hyperpage{21}
+    \subitem {rikiavimas}, \hyperpage{21}
+    \subitem {skaitymas}, \hyperpage{22}
+    \subitem {spausdinimas}, \hyperpage{22}
+    \subitem {StudentuPadalinimas}, \hyperpage{22}
+    \subitem {StudentuPadalinimas2}, \hyperpage{23}
+    \subitem {StudentuPadalinimas3}, \hyperpage{23}
+    \subitem {tyrimasAntras}, \hyperpage{23}
+    \subitem {tyrimasPirmas}, \hyperpage{24}
 
   \indexspace
 
   \item {getPavarde}
-    \subitem {Zmogus}, \hyperpage{9}
+    \subitem {Zmogus}, \hyperpage{17}
   \item {getVardas}
-    \subitem {Zmogus}, \hyperpage{9}
+    \subitem {Zmogus}, \hyperpage{17}
 
   \indexspace
 
-  \item {include/funkcijos.h}, \hyperpage{13}, \hyperpage{18}
-  \item {include/studentas.h}, \hyperpage{22}
-  \item {include/zmogus.h}, \hyperpage{24}
+  \item {include/funkcijos.h}, \hyperpage{19}, \hyperpage{24}
+  \item {include/studentas.h}, \hyperpage{28}
+  \item {include/vector.h}, \hyperpage{30, 31}
+  \item {include/zmogus.h}, \hyperpage{35}
+  \item {insert}
+    \subitem {Vector$<$ T $>$}, \hyperpage{13}
+  \item {iterator}
+    \subitem {Vector$<$ T $>$}, \hyperpage{9}
 
   \indexspace
 
   \item {KonteineriuTyrimas}
-    \subitem {funkcijos.h}, \hyperpage{15}
+    \subitem {funkcijos.h}, \hyperpage{21}
 
   \indexspace
 
   \item {main}
-    \subitem {main.cpp}, \hyperpage{27}
+    \subitem {main.cpp}, \hyperpage{38}
   \item {main.cpp}
-    \subitem {main}, \hyperpage{27}
-    \subitem {pavardes}, \hyperpage{27}
-    \subitem {vardai}, \hyperpage{27}
+    \subitem {main}, \hyperpage{38}
+    \subitem {pavardes}, \hyperpage{39}
+    \subitem {vardai}, \hyperpage{39}
 
   \indexspace
 
+  \item {operator!=}
+    \subitem {vector.h}, \hyperpage{30}
   \item {operator=}
-    \subitem {Zmogus}, \hyperpage{9, 10}
+    \subitem {Vector$<$ T $>$}, \hyperpage{13}
+    \subitem {Zmogus}, \hyperpage{17}
+  \item {operator==}
+    \subitem {vector.h}, \hyperpage{30}
+  \item {operator[]}
+    \subitem {Vector$<$ T $>$}, \hyperpage{13}
 
   \indexspace
 
   \item {pavarde\_}
-    \subitem {Zmogus}, \hyperpage{11}
+    \subitem {Zmogus}, \hyperpage{18}
   \item {pavardes}
-    \subitem {main.cpp}, \hyperpage{27}
+    \subitem {main.cpp}, \hyperpage{39}
+  \item {pointer}
+    \subitem {Vector$<$ T $>$}, \hyperpage{9}
+  \item {pop\_back}
+    \subitem {Vector$<$ T $>$}, \hyperpage{13}
+  \item {push\_back}
+    \subitem {Vector$<$ T $>$}, \hyperpage{14}
 
   \indexspace
 
+  \item {reference}
+    \subitem {Vector$<$ T $>$}, \hyperpage{9}
+  \item {reserve}
+    \subitem {Vector$<$ T $>$}, \hyperpage{14}
+  \item {resize}
+    \subitem {Vector$<$ T $>$}, \hyperpage{14}
+  \item {reverse\_iterator}
+    \subitem {Vector$<$ T $>$}, \hyperpage{9}
   \item {rikiavimas}
-    \subitem {funkcijos.h}, \hyperpage{15}
+    \subitem {funkcijos.h}, \hyperpage{21}
 
   \indexspace
 
   \item {setPavarde}
-    \subitem {Zmogus}, \hyperpage{10}
+    \subitem {Zmogus}, \hyperpage{18}
   \item {setVardas}
-    \subitem {Zmogus}, \hyperpage{10}
+    \subitem {Zmogus}, \hyperpage{18}
+  \item {shrink\_to\_fit}
+    \subitem {Vector$<$ T $>$}, \hyperpage{14}
+  \item {size}
+    \subitem {Vector$<$ T $>$}, \hyperpage{14}
+  \item {size\_type}
+    \subitem {Vector$<$ T $>$}, \hyperpage{9}
   \item {skaitymas}
-    \subitem {funkcijos.h}, \hyperpage{16}
+    \subitem {funkcijos.h}, \hyperpage{22}
   \item {spausdinimas}
-    \subitem {funkcijos.cpp}, \hyperpage{26}
-    \subitem {funkcijos.h}, \hyperpage{16}
-  \item {src/funkcijos.cpp}, \hyperpage{25}
-  \item {src/main.cpp}, \hyperpage{27}
+    \subitem {funkcijos.cpp}, \hyperpage{37}
+    \subitem {funkcijos.h}, \hyperpage{22}
+  \item {src/funkcijos.cpp}, \hyperpage{36}
+  \item {src/main.cpp}, \hyperpage{38}
   \item {Studentas}, \hyperpage{7}
   \item {StudentuPadalinimas}
-    \subitem {funkcijos.h}, \hyperpage{16}
+    \subitem {funkcijos.h}, \hyperpage{22}
   \item {StudentuPadalinimas2}
-    \subitem {funkcijos.h}, \hyperpage{17}
+    \subitem {funkcijos.h}, \hyperpage{23}
   \item {StudentuPadalinimas3}
-    \subitem {funkcijos.h}, \hyperpage{17}
+    \subitem {funkcijos.h}, \hyperpage{23}
+  \item {swap}
+    \subitem {Vector$<$ T $>$}, \hyperpage{14}
 
   \indexspace
 
   \item {tyrimasAntras}
-    \subitem {funkcijos.cpp}, \hyperpage{26}
-    \subitem {funkcijos.h}, \hyperpage{17}
+    \subitem {funkcijos.cpp}, \hyperpage{37}
+    \subitem {funkcijos.h}, \hyperpage{23}
   \item {tyrimasPirmas}
-    \subitem {funkcijos.cpp}, \hyperpage{26}
-    \subitem {funkcijos.h}, \hyperpage{18}
+    \subitem {funkcijos.cpp}, \hyperpage{38}
+    \subitem {funkcijos.h}, \hyperpage{24}
 
   \indexspace
 
+  \item {value\_type}
+    \subitem {Vector$<$ T $>$}, \hyperpage{9}
   \item {vardai}
-    \subitem {main.cpp}, \hyperpage{27}
+    \subitem {main.cpp}, \hyperpage{39}
   \item {vardas\_}
-    \subitem {Zmogus}, \hyperpage{11}
+    \subitem {Zmogus}, \hyperpage{18}
+  \item {Vector}
+    \subitem {Vector$<$ T $>$}, \hyperpage{10}
+  \item {Vector$<$ T $>$}, \hyperpage{7}
+    \subitem {\texorpdfstring{$\sim$}{\string~}Vector}, \hyperpage{10}
+    \subitem {assign}, \hyperpage{10}
+    \subitem {at}, \hyperpage{10}
+    \subitem {back}, \hyperpage{11}
+    \subitem {begin}, \hyperpage{11}
+    \subitem {capacity}, \hyperpage{11}
+    \subitem {cbegin}, \hyperpage{11}
+    \subitem {cend}, \hyperpage{11}
+    \subitem {clear}, \hyperpage{11}
+    \subitem {const\_iterator}, \hyperpage{8}
+    \subitem {const\_pointer}, \hyperpage{8}
+    \subitem {const\_reference}, \hyperpage{8}
+    \subitem {const\_reverse\_iterator}, \hyperpage{9}
+    \subitem {data}, \hyperpage{11, 12}
+    \subitem {difference\_type}, \hyperpage{9}
+    \subitem {empty}, \hyperpage{12}
+    \subitem {end}, \hyperpage{12}
+    \subitem {erase}, \hyperpage{12}
+    \subitem {front}, \hyperpage{12}
+    \subitem {insert}, \hyperpage{13}
+    \subitem {iterator}, \hyperpage{9}
+    \subitem {operator=}, \hyperpage{13}
+    \subitem {operator[]}, \hyperpage{13}
+    \subitem {pointer}, \hyperpage{9}
+    \subitem {pop\_back}, \hyperpage{13}
+    \subitem {push\_back}, \hyperpage{14}
+    \subitem {reference}, \hyperpage{9}
+    \subitem {reserve}, \hyperpage{14}
+    \subitem {resize}, \hyperpage{14}
+    \subitem {reverse\_iterator}, \hyperpage{9}
+    \subitem {shrink\_to\_fit}, \hyperpage{14}
+    \subitem {size}, \hyperpage{14}
+    \subitem {size\_type}, \hyperpage{9}
+    \subitem {swap}, \hyperpage{14}
+    \subitem {value\_type}, \hyperpage{9}
+    \subitem {Vector}, \hyperpage{10}
+  \item {vector.h}
+    \subitem {operator!=}, \hyperpage{30}
+    \subitem {operator==}, \hyperpage{30}
   \item {vidurkis}
-    \subitem {Zmogus}, \hyperpage{10}
+    \subitem {Zmogus}, \hyperpage{18}
 
   \indexspace
 
-  \item {Zmogus}, \hyperpage{7}
-    \subitem {\texorpdfstring{$\sim$}{\string~}Zmogus}, \hyperpage{8}
-    \subitem {getPavarde}, \hyperpage{9}
-    \subitem {getVardas}, \hyperpage{9}
-    \subitem {operator=}, \hyperpage{9, 10}
-    \subitem {pavarde\_}, \hyperpage{11}
-    \subitem {setPavarde}, \hyperpage{10}
-    \subitem {setVardas}, \hyperpage{10}
-    \subitem {vardas\_}, \hyperpage{11}
-    \subitem {vidurkis}, \hyperpage{10}
-    \subitem {Zmogus}, \hyperpage{8, 9}
+  \item {Zmogus}, \hyperpage{15}
+    \subitem {\texorpdfstring{$\sim$}{\string~}Zmogus}, \hyperpage{16}
+    \subitem {getPavarde}, \hyperpage{17}
+    \subitem {getVardas}, \hyperpage{17}
+    \subitem {operator=}, \hyperpage{17}
+    \subitem {pavarde\_}, \hyperpage{18}
+    \subitem {setPavarde}, \hyperpage{18}
+    \subitem {setVardas}, \hyperpage{18}
+    \subitem {vardas\_}, \hyperpage{18}
+    \subitem {vidurkis}, \hyperpage{18}
+    \subitem {Zmogus}, \hyperpage{16}
 
 \end{theindex}

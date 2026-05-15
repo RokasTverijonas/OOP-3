@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['tyrimasantras_0',['tyrimasantras',['../funkcijos_8h.html#aa6a0f8ff57d9ca585ad06e30c5d1c775',1,'tyrimasAntras(std::vector&lt; Studentas &gt; &amp;A, std::vector&lt; Studentas &gt; &amp;vargsai, std::vector&lt; Studentas &gt; &amp;kietekai):&#160;funkcijos.cpp'],['../funkcijos_8cpp.html#aa6a0f8ff57d9ca585ad06e30c5d1c775',1,'tyrimasAntras(std::vector&lt; Studentas &gt; &amp;A, std::vector&lt; Studentas &gt; &amp;vargsai, std::vector&lt; Studentas &gt; &amp;kietekai):&#160;funkcijos.cpp']]],
-  ['tyrimaspirmas_1',['tyrimaspirmas',['../funkcijos_8h.html#aeb2bc950e5dec2e041256a8d4ee1e202',1,'tyrimasPirmas():&#160;funkcijos.cpp'],['../funkcijos_8cpp.html#aeb2bc950e5dec2e041256a8d4ee1e202',1,'tyrimasPirmas():&#160;funkcijos.cpp']]]
+  ['main_0',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
+  ['main_2ecpp_1',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['mediana_2',['mediana',['../classStudentas.html#a503f18b8bbe14f5501ba97a1dc1c48fc',1,'Studentas']]]
 ];

@@ -12,6 +12,7 @@
 {\ttfamily \#include $<$deque$>$}\newline
 {\ttfamily \#include $<$chrono$>$}\newline
 {\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include "{}vector.\+h"{}}\newline
 Įtraukimo priklausomybių diagrama funkcijos.\+h\+:
 % FIG 0
 Šis grafas rodo, kuris failas tiesiogiai ar netiesiogiai įtraukia šį failą\+:
@@ -19,15 +20,15 @@
 \doxysubsubsection*{Funkcijos}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{funkcijos_8h_ae90e2d81c5a1ad8197ede4ea5ad7c869}{spausdinimas}} (std\+::vector$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&A)
+void \mbox{\hyperlink{funkcijos_8h_ae0ffef1dff72ad73c8852c13c8030cd3}{spausdinimas}} (\mbox{\hyperlink{classVector}{Vector}}$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&A)
 \begin{DoxyCompactList}\small\item\em Spausdina studentų sąrašą \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{funkcijos_8h_aaa9d3d1216bf26852c8e11bcd0ec75c5}{failo\+Spausdinimas}} (std\+::vector$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&A)
+void \mbox{\hyperlink{funkcijos_8h_aed7761f40f842e0d6b1142b527ddf36e}{failo\+Spausdinimas}} (\mbox{\hyperlink{classVector}{Vector}}$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&A)
 \begin{DoxyCompactList}\small\item\em Spausina studentų sąrašą ekrane arba faile. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{funkcijos_8h_a80deaaebe72ee76610107c425cdc9690}{failo\+Generavimas}} (int stud\+Kiekis)
 \begin{DoxyCompactList}\small\item\em Generuoja studentų failą \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{funkcijos_8h_aeb2bc950e5dec2e041256a8d4ee1e202}{tyrimas\+Pirmas}} ()
 \begin{DoxyCompactList}\small\item\em Atlieka tyrimą -\/ matuoja failų generavimo laiką \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{funkcijos_8h_aa6a0f8ff57d9ca585ad06e30c5d1c775}{tyrimas\+Antras}} (std\+::vector$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&A, std\+::vector$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&vargsai, std\+::vector$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&kietekai)
+void \mbox{\hyperlink{funkcijos_8h_a31fcef07602199df3c114ab4745011e8}{tyrimas\+Antras}} (\mbox{\hyperlink{classVector}{Vector}}$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&A, \mbox{\hyperlink{classVector}{Vector}}$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&vargsai, \mbox{\hyperlink{classVector}{Vector}}$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&kietekai)
 \begin{DoxyCompactList}\small\item\em Atlieka tyrimą -\/ matuoja nuskaitymo ir padalinimo laiką \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename konteineris $>$ }\\void \mbox{\hyperlink{funkcijos_8h_a5f165c021541f5934ea07a975ec1ca82}{skaitymas}} (konteineris \&A, std\+::string failas)
 \begin{DoxyCompactList}\small\item\em Nuskaito duomenis iš failo. \end{DoxyCompactList}\item 
@@ -86,11 +87,11 @@ Generuoja studentų failą
 {\em stud\+Kiekis} & Studentų kiekis \\
 \hline
 \end{DoxyParams}
-\Hypertarget{funkcijos_8h_aaa9d3d1216bf26852c8e11bcd0ec75c5}\label{funkcijos_8h_aaa9d3d1216bf26852c8e11bcd0ec75c5} 
+\Hypertarget{funkcijos_8h_aed7761f40f842e0d6b1142b527ddf36e}\label{funkcijos_8h_aed7761f40f842e0d6b1142b527ddf36e} 
 \index{funkcijos.h@{funkcijos.h}!failoSpausdinimas@{failoSpausdinimas}}
 \index{failoSpausdinimas@{failoSpausdinimas}!funkcijos.h@{funkcijos.h}}
 \doxysubsubsection{\texorpdfstring{failoSpausdinimas()}{failoSpausdinimas()}}
-{\footnotesize\ttfamily void failo\+Spausdinimas (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&}]{A }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void failo\+Spausdinimas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector}{Vector}}$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&}]{A }\end{DoxyParamCaption})}
 
 
 
@@ -130,7 +131,7 @@ Atlieka skirtingų konteinerių greičio tyrimą su skirtingomis strategijomis.
 {\em strategija} & Padalinimo strategija (1, 2 arba 3) \\
 \hline
 \end{DoxyParams}
-\Hypertarget{funkcijos_8h_a1b66f91e024cec1a2da75dd5126717ab}\label{funkcijos_8h_a1b66f91e024cec1a2da75dd5126717ab} 
+atskiri\+Failai("{}studentai"{} + std\+::to\+\_\+string(x) + "{}.\+txt"{}, vargsai, kietekai);\Hypertarget{funkcijos_8h_a1b66f91e024cec1a2da75dd5126717ab}\label{funkcijos_8h_a1b66f91e024cec1a2da75dd5126717ab} 
 \index{funkcijos.h@{funkcijos.h}!rikiavimas@{rikiavimas}}
 \index{rikiavimas@{rikiavimas}!funkcijos.h@{funkcijos.h}}
 \doxysubsubsection{\texorpdfstring{rikiavimas()}{rikiavimas()}}
@@ -176,11 +177,11 @@ Nuskaito duomenis iš failo.
 {\em failas} & Failo pavadinimas \\
 \hline
 \end{DoxyParams}
-\Hypertarget{funkcijos_8h_ae90e2d81c5a1ad8197ede4ea5ad7c869}\label{funkcijos_8h_ae90e2d81c5a1ad8197ede4ea5ad7c869} 
+\Hypertarget{funkcijos_8h_ae0ffef1dff72ad73c8852c13c8030cd3}\label{funkcijos_8h_ae0ffef1dff72ad73c8852c13c8030cd3} 
 \index{funkcijos.h@{funkcijos.h}!spausdinimas@{spausdinimas}}
 \index{spausdinimas@{spausdinimas}!funkcijos.h@{funkcijos.h}}
 \doxysubsubsection{\texorpdfstring{spausdinimas()}{spausdinimas()}}
-{\footnotesize\ttfamily void spausdinimas (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&}]{A }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void spausdinimas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector}{Vector}}$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&}]{A }\end{DoxyParamCaption})}
 
 
 
@@ -262,11 +263,11 @@ void Studentu\+Padalinimas3 (\begin{DoxyParamCaption}\item[{konteineris \&}]{A, 
 {\em vargsai} & Prastai besimokančių studentų konteineris \\
 \hline
 \end{DoxyParams}
-\Hypertarget{funkcijos_8h_aa6a0f8ff57d9ca585ad06e30c5d1c775}\label{funkcijos_8h_aa6a0f8ff57d9ca585ad06e30c5d1c775} 
+\Hypertarget{funkcijos_8h_a31fcef07602199df3c114ab4745011e8}\label{funkcijos_8h_a31fcef07602199df3c114ab4745011e8} 
 \index{funkcijos.h@{funkcijos.h}!tyrimasAntras@{tyrimasAntras}}
 \index{tyrimasAntras@{tyrimasAntras}!funkcijos.h@{funkcijos.h}}
 \doxysubsubsection{\texorpdfstring{tyrimasAntras()}{tyrimasAntras()}}
-{\footnotesize\ttfamily void tyrimas\+Antras (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&}]{A,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&}]{vargsai,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&}]{kietekai }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void tyrimas\+Antras (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector}{Vector}}$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&}]{A,  }\item[{\mbox{\hyperlink{classVector}{Vector}}$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&}]{vargsai,  }\item[{\mbox{\hyperlink{classVector}{Vector}}$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&}]{kietekai }\end{DoxyParamCaption})}
 
 
 

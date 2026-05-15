@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['operator_3d_0',['operator=',['../classStudentas.html#a5061f9f87bd269e505d2948c8c0b157a',1,'Studentas::operator=(const Studentas &amp;a)'],['../classStudentas.html#a9669872af622e52511ca103652c5e6f6',1,'Studentas::operator=(Studentas &amp;&amp;a)'],['../classZmogus.html#a6467667c6ceb75660eb2193b16191ad4',1,'Zmogus::operator=(const Zmogus &amp;a)'],['../classZmogus.html#a7258691615ec23ab9d292cd055a20fcc',1,'Zmogus::operator=(Zmogus &amp;&amp;a)']]]
+  ['failogeneravimas_0',['failogeneravimas',['../funkcijos_8h.html#a80deaaebe72ee76610107c425cdc9690',1,'failoGeneravimas(int studKiekis):&#160;funkcijos.cpp'],['../funkcijos_8cpp.html#a80deaaebe72ee76610107c425cdc9690',1,'failoGeneravimas(int studKiekis):&#160;funkcijos.cpp']]],
+  ['failospausdinimas_1',['failospausdinimas',['../funkcijos_8h.html#aed7761f40f842e0d6b1142b527ddf36e',1,'failoSpausdinimas(Vector&lt; Studentas &gt; &amp;A):&#160;funkcijos.cpp'],['../funkcijos_8cpp.html#aed7761f40f842e0d6b1142b527ddf36e',1,'failoSpausdinimas(Vector&lt; Studentas &gt; &amp;A):&#160;funkcijos.cpp']]],
+  ['front_2',['front',['../classVector.html#a2f2e14b2a9a0041c783b5ad44dd59593',1,'Vector::front()'],['../classVector.html#a78dc531e4c79c33f8e7d4574a155f529',1,'Vector::front() const']]]
 ];

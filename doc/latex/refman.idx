@@ -1,78 +1,183 @@
 \indexentry{Studentas@{Studentas}|hyperpage}{7}
-\indexentry{Zmogus@{Zmogus}|hyperpage}{7}
-\indexentry{Zmogus@{Zmogus}!Zmogus@{Zmogus}|hyperpage}{8}
-\indexentry{Zmogus@{Zmogus}!Zmogus@{Zmogus}|hyperpage}{8}
-\indexentry{Zmogus@{Zmogus}!Zmogus@{Zmogus}|hyperpage}{8}
-\indexentry{Zmogus@{Zmogus}!Zmogus@{Zmogus}|hyperpage}{8}
-\indexentry{Zmogus@{Zmogus}!````~Zmogus@{\texorpdfstring{$\sim$}{\string~}Zmogus}|hyperpage}{8}
-\indexentry{````~Zmogus@{\texorpdfstring{$\sim$}{\string~}Zmogus}!Zmogus@{Zmogus}|hyperpage}{8}
-\indexentry{Zmogus@{Zmogus}!Zmogus@{Zmogus}|hyperpage}{8}
-\indexentry{Zmogus@{Zmogus}!Zmogus@{Zmogus}|hyperpage}{8}
-\indexentry{Zmogus@{Zmogus}!Zmogus@{Zmogus}|hyperpage}{9}
-\indexentry{Zmogus@{Zmogus}!Zmogus@{Zmogus}|hyperpage}{9}
-\indexentry{Zmogus@{Zmogus}!getPavarde@{getPavarde}|hyperpage}{9}
-\indexentry{getPavarde@{getPavarde}!Zmogus@{Zmogus}|hyperpage}{9}
-\indexentry{Zmogus@{Zmogus}!getVardas@{getVardas}|hyperpage}{9}
-\indexentry{getVardas@{getVardas}!Zmogus@{Zmogus}|hyperpage}{9}
-\indexentry{Zmogus@{Zmogus}!operator=@{operator=}|hyperpage}{9}
-\indexentry{operator=@{operator=}!Zmogus@{Zmogus}|hyperpage}{9}
-\indexentry{Zmogus@{Zmogus}!operator=@{operator=}|hyperpage}{10}
-\indexentry{operator=@{operator=}!Zmogus@{Zmogus}|hyperpage}{10}
-\indexentry{Zmogus@{Zmogus}!setPavarde@{setPavarde}|hyperpage}{10}
-\indexentry{setPavarde@{setPavarde}!Zmogus@{Zmogus}|hyperpage}{10}
-\indexentry{Zmogus@{Zmogus}!setVardas@{setVardas}|hyperpage}{10}
-\indexentry{setVardas@{setVardas}!Zmogus@{Zmogus}|hyperpage}{10}
-\indexentry{Zmogus@{Zmogus}!vidurkis@{vidurkis}|hyperpage}{10}
-\indexentry{vidurkis@{vidurkis}!Zmogus@{Zmogus}|hyperpage}{10}
-\indexentry{Zmogus@{Zmogus}!pavarde\_@{pavarde\_}|hyperpage}{11}
-\indexentry{pavarde\_@{pavarde\_}!Zmogus@{Zmogus}|hyperpage}{11}
-\indexentry{Zmogus@{Zmogus}!vardas\_@{vardas\_}|hyperpage}{11}
-\indexentry{vardas\_@{vardas\_}!Zmogus@{Zmogus}|hyperpage}{11}
-\indexentry{include/funkcijos.h@{include/funkcijos.h}|hyperpage}{13}
-\indexentry{funkcijos.h@{funkcijos.h}!atskiriFailai@{atskiriFailai}|hyperpage}{14}
-\indexentry{atskiriFailai@{atskiriFailai}!funkcijos.h@{funkcijos.h}|hyperpage}{14}
-\indexentry{funkcijos.h@{funkcijos.h}!failoGeneravimas@{failoGeneravimas}|hyperpage}{14}
-\indexentry{failoGeneravimas@{failoGeneravimas}!funkcijos.h@{funkcijos.h}|hyperpage}{14}
-\indexentry{funkcijos.h@{funkcijos.h}!failoSpausdinimas@{failoSpausdinimas}|hyperpage}{15}
-\indexentry{failoSpausdinimas@{failoSpausdinimas}!funkcijos.h@{funkcijos.h}|hyperpage}{15}
-\indexentry{funkcijos.h@{funkcijos.h}!KonteineriuTyrimas@{KonteineriuTyrimas}|hyperpage}{15}
-\indexentry{KonteineriuTyrimas@{KonteineriuTyrimas}!funkcijos.h@{funkcijos.h}|hyperpage}{15}
-\indexentry{funkcijos.h@{funkcijos.h}!rikiavimas@{rikiavimas}|hyperpage}{15}
-\indexentry{rikiavimas@{rikiavimas}!funkcijos.h@{funkcijos.h}|hyperpage}{15}
-\indexentry{funkcijos.h@{funkcijos.h}!skaitymas@{skaitymas}|hyperpage}{16}
-\indexentry{skaitymas@{skaitymas}!funkcijos.h@{funkcijos.h}|hyperpage}{16}
-\indexentry{funkcijos.h@{funkcijos.h}!spausdinimas@{spausdinimas}|hyperpage}{16}
-\indexentry{spausdinimas@{spausdinimas}!funkcijos.h@{funkcijos.h}|hyperpage}{16}
-\indexentry{funkcijos.h@{funkcijos.h}!StudentuPadalinimas@{StudentuPadalinimas}|hyperpage}{16}
-\indexentry{StudentuPadalinimas@{StudentuPadalinimas}!funkcijos.h@{funkcijos.h}|hyperpage}{16}
-\indexentry{funkcijos.h@{funkcijos.h}!StudentuPadalinimas2@{StudentuPadalinimas2}|hyperpage}{17}
-\indexentry{StudentuPadalinimas2@{StudentuPadalinimas2}!funkcijos.h@{funkcijos.h}|hyperpage}{17}
-\indexentry{funkcijos.h@{funkcijos.h}!StudentuPadalinimas3@{StudentuPadalinimas3}|hyperpage}{17}
-\indexentry{StudentuPadalinimas3@{StudentuPadalinimas3}!funkcijos.h@{funkcijos.h}|hyperpage}{17}
-\indexentry{funkcijos.h@{funkcijos.h}!tyrimasAntras@{tyrimasAntras}|hyperpage}{17}
-\indexentry{tyrimasAntras@{tyrimasAntras}!funkcijos.h@{funkcijos.h}|hyperpage}{17}
-\indexentry{funkcijos.h@{funkcijos.h}!tyrimasPirmas@{tyrimasPirmas}|hyperpage}{18}
-\indexentry{tyrimasPirmas@{tyrimasPirmas}!funkcijos.h@{funkcijos.h}|hyperpage}{18}
-\indexentry{include/funkcijos.h@{include/funkcijos.h}|hyperpage}{18}
-\indexentry{include/studentas.h@{include/studentas.h}|hyperpage}{22}
-\indexentry{include/studentas.h@{include/studentas.h}|hyperpage}{22}
-\indexentry{include/zmogus.h@{include/zmogus.h}|hyperpage}{24}
-\indexentry{include/zmogus.h@{include/zmogus.h}|hyperpage}{24}
-\indexentry{src/funkcijos.cpp@{src/funkcijos.cpp}|hyperpage}{25}
-\indexentry{funkcijos.cpp@{funkcijos.cpp}!failoGeneravimas@{failoGeneravimas}|hyperpage}{25}
-\indexentry{failoGeneravimas@{failoGeneravimas}!funkcijos.cpp@{funkcijos.cpp}|hyperpage}{25}
-\indexentry{funkcijos.cpp@{funkcijos.cpp}!failoSpausdinimas@{failoSpausdinimas}|hyperpage}{26}
-\indexentry{failoSpausdinimas@{failoSpausdinimas}!funkcijos.cpp@{funkcijos.cpp}|hyperpage}{26}
-\indexentry{funkcijos.cpp@{funkcijos.cpp}!spausdinimas@{spausdinimas}|hyperpage}{26}
-\indexentry{spausdinimas@{spausdinimas}!funkcijos.cpp@{funkcijos.cpp}|hyperpage}{26}
-\indexentry{funkcijos.cpp@{funkcijos.cpp}!tyrimasAntras@{tyrimasAntras}|hyperpage}{26}
-\indexentry{tyrimasAntras@{tyrimasAntras}!funkcijos.cpp@{funkcijos.cpp}|hyperpage}{26}
-\indexentry{funkcijos.cpp@{funkcijos.cpp}!tyrimasPirmas@{tyrimasPirmas}|hyperpage}{26}
-\indexentry{tyrimasPirmas@{tyrimasPirmas}!funkcijos.cpp@{funkcijos.cpp}|hyperpage}{26}
-\indexentry{src/main.cpp@{src/main.cpp}|hyperpage}{27}
-\indexentry{main.cpp@{main.cpp}!main@{main}|hyperpage}{27}
-\indexentry{main@{main}!main.cpp@{main.cpp}|hyperpage}{27}
-\indexentry{main.cpp@{main.cpp}!pavardes@{pavardes}|hyperpage}{27}
-\indexentry{pavardes@{pavardes}!main.cpp@{main.cpp}|hyperpage}{27}
-\indexentry{main.cpp@{main.cpp}!vardai@{vardai}|hyperpage}{27}
-\indexentry{vardai@{vardai}!main.cpp@{main.cpp}|hyperpage}{27}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{7}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!const\_iterator@{const\_iterator}|hyperpage}{8}
+\indexentry{const\_iterator@{const\_iterator}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{8}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!const\_pointer@{const\_pointer}|hyperpage}{8}
+\indexentry{const\_pointer@{const\_pointer}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{8}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!const\_reference@{const\_reference}|hyperpage}{8}
+\indexentry{const\_reference@{const\_reference}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{8}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!const\_reverse\_iterator@{const\_reverse\_iterator}|hyperpage}{9}
+\indexentry{const\_reverse\_iterator@{const\_reverse\_iterator}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{9}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!difference\_type@{difference\_type}|hyperpage}{9}
+\indexentry{difference\_type@{difference\_type}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{9}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!iterator@{iterator}|hyperpage}{9}
+\indexentry{iterator@{iterator}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{9}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!pointer@{pointer}|hyperpage}{9}
+\indexentry{pointer@{pointer}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{9}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!reference@{reference}|hyperpage}{9}
+\indexentry{reference@{reference}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{9}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!reverse\_iterator@{reverse\_iterator}|hyperpage}{9}
+\indexentry{reverse\_iterator@{reverse\_iterator}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{9}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!size\_type@{size\_type}|hyperpage}{9}
+\indexentry{size\_type@{size\_type}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{9}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!value\_type@{value\_type}|hyperpage}{9}
+\indexentry{value\_type@{value\_type}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{9}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!Vector@{Vector}|hyperpage}{10}
+\indexentry{Vector@{Vector}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{10}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!Vector@{Vector}|hyperpage}{10}
+\indexentry{Vector@{Vector}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{10}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!Vector@{Vector}|hyperpage}{10}
+\indexentry{Vector@{Vector}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{10}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!Vector@{Vector}|hyperpage}{10}
+\indexentry{Vector@{Vector}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{10}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!````~Vector@{\texorpdfstring{$\sim$}{\string~}Vector}|hyperpage}{10}
+\indexentry{````~Vector@{\texorpdfstring{$\sim$}{\string~}Vector}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{10}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!assign@{assign}|hyperpage}{10}
+\indexentry{assign@{assign}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{10}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!at@{at}|hyperpage}{10}
+\indexentry{at@{at}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{10}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!at@{at}|hyperpage}{10}
+\indexentry{at@{at}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{10}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!back@{back}|hyperpage}{11}
+\indexentry{back@{back}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{11}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!back@{back}|hyperpage}{11}
+\indexentry{back@{back}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{11}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!begin@{begin}|hyperpage}{11}
+\indexentry{begin@{begin}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{11}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!begin@{begin}|hyperpage}{11}
+\indexentry{begin@{begin}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{11}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!capacity@{capacity}|hyperpage}{11}
+\indexentry{capacity@{capacity}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{11}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!cbegin@{cbegin}|hyperpage}{11}
+\indexentry{cbegin@{cbegin}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{11}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!cend@{cend}|hyperpage}{11}
+\indexentry{cend@{cend}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{11}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!clear@{clear}|hyperpage}{11}
+\indexentry{clear@{clear}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{11}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!data@{data}|hyperpage}{11}
+\indexentry{data@{data}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{11}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!data@{data}|hyperpage}{12}
+\indexentry{data@{data}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{12}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!empty@{empty}|hyperpage}{12}
+\indexentry{empty@{empty}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{12}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!end@{end}|hyperpage}{12}
+\indexentry{end@{end}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{12}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!end@{end}|hyperpage}{12}
+\indexentry{end@{end}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{12}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!erase@{erase}|hyperpage}{12}
+\indexentry{erase@{erase}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{12}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!erase@{erase}|hyperpage}{12}
+\indexentry{erase@{erase}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{12}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!front@{front}|hyperpage}{12}
+\indexentry{front@{front}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{12}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!front@{front}|hyperpage}{12}
+\indexentry{front@{front}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{12}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!insert@{insert}|hyperpage}{13}
+\indexentry{insert@{insert}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{13}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!insert@{insert}|hyperpage}{13}
+\indexentry{insert@{insert}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{13}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!operator=@{operator=}|hyperpage}{13}
+\indexentry{operator=@{operator=}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{13}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!operator=@{operator=}|hyperpage}{13}
+\indexentry{operator=@{operator=}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{13}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}|hyperpage}{13}
+\indexentry{operator\mbox{[}\mbox{]}@{operator[]}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{13}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}|hyperpage}{13}
+\indexentry{operator\mbox{[}\mbox{]}@{operator[]}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{13}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!pop\_back@{pop\_back}|hyperpage}{13}
+\indexentry{pop\_back@{pop\_back}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{13}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!push\_back@{push\_back}|hyperpage}{14}
+\indexentry{push\_back@{push\_back}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{14}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!reserve@{reserve}|hyperpage}{14}
+\indexentry{reserve@{reserve}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{14}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!resize@{resize}|hyperpage}{14}
+\indexentry{resize@{resize}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{14}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!shrink\_to\_fit@{shrink\_to\_fit}|hyperpage}{14}
+\indexentry{shrink\_to\_fit@{shrink\_to\_fit}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{14}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!size@{size}|hyperpage}{14}
+\indexentry{size@{size}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{14}
+\indexentry{Vector$<$ T $>$@{Vector$<$ T $>$}!swap@{swap}|hyperpage}{14}
+\indexentry{swap@{swap}!Vector$<$ T $>$@{Vector$<$ T $>$}|hyperpage}{14}
+\indexentry{Zmogus@{Zmogus}|hyperpage}{15}
+\indexentry{Zmogus@{Zmogus}!Zmogus@{Zmogus}|hyperpage}{16}
+\indexentry{Zmogus@{Zmogus}!Zmogus@{Zmogus}|hyperpage}{16}
+\indexentry{Zmogus@{Zmogus}!Zmogus@{Zmogus}|hyperpage}{16}
+\indexentry{Zmogus@{Zmogus}!Zmogus@{Zmogus}|hyperpage}{16}
+\indexentry{Zmogus@{Zmogus}!````~Zmogus@{\texorpdfstring{$\sim$}{\string~}Zmogus}|hyperpage}{16}
+\indexentry{````~Zmogus@{\texorpdfstring{$\sim$}{\string~}Zmogus}!Zmogus@{Zmogus}|hyperpage}{16}
+\indexentry{Zmogus@{Zmogus}!Zmogus@{Zmogus}|hyperpage}{16}
+\indexentry{Zmogus@{Zmogus}!Zmogus@{Zmogus}|hyperpage}{16}
+\indexentry{Zmogus@{Zmogus}!Zmogus@{Zmogus}|hyperpage}{16}
+\indexentry{Zmogus@{Zmogus}!Zmogus@{Zmogus}|hyperpage}{16}
+\indexentry{Zmogus@{Zmogus}!getPavarde@{getPavarde}|hyperpage}{17}
+\indexentry{getPavarde@{getPavarde}!Zmogus@{Zmogus}|hyperpage}{17}
+\indexentry{Zmogus@{Zmogus}!getVardas@{getVardas}|hyperpage}{17}
+\indexentry{getVardas@{getVardas}!Zmogus@{Zmogus}|hyperpage}{17}
+\indexentry{Zmogus@{Zmogus}!operator=@{operator=}|hyperpage}{17}
+\indexentry{operator=@{operator=}!Zmogus@{Zmogus}|hyperpage}{17}
+\indexentry{Zmogus@{Zmogus}!operator=@{operator=}|hyperpage}{17}
+\indexentry{operator=@{operator=}!Zmogus@{Zmogus}|hyperpage}{17}
+\indexentry{Zmogus@{Zmogus}!setPavarde@{setPavarde}|hyperpage}{18}
+\indexentry{setPavarde@{setPavarde}!Zmogus@{Zmogus}|hyperpage}{18}
+\indexentry{Zmogus@{Zmogus}!setVardas@{setVardas}|hyperpage}{18}
+\indexentry{setVardas@{setVardas}!Zmogus@{Zmogus}|hyperpage}{18}
+\indexentry{Zmogus@{Zmogus}!vidurkis@{vidurkis}|hyperpage}{18}
+\indexentry{vidurkis@{vidurkis}!Zmogus@{Zmogus}|hyperpage}{18}
+\indexentry{Zmogus@{Zmogus}!pavarde\_@{pavarde\_}|hyperpage}{18}
+\indexentry{pavarde\_@{pavarde\_}!Zmogus@{Zmogus}|hyperpage}{18}
+\indexentry{Zmogus@{Zmogus}!vardas\_@{vardas\_}|hyperpage}{18}
+\indexentry{vardas\_@{vardas\_}!Zmogus@{Zmogus}|hyperpage}{18}
+\indexentry{include/funkcijos.h@{include/funkcijos.h}|hyperpage}{19}
+\indexentry{funkcijos.h@{funkcijos.h}!atskiriFailai@{atskiriFailai}|hyperpage}{20}
+\indexentry{atskiriFailai@{atskiriFailai}!funkcijos.h@{funkcijos.h}|hyperpage}{20}
+\indexentry{funkcijos.h@{funkcijos.h}!failoGeneravimas@{failoGeneravimas}|hyperpage}{20}
+\indexentry{failoGeneravimas@{failoGeneravimas}!funkcijos.h@{funkcijos.h}|hyperpage}{20}
+\indexentry{funkcijos.h@{funkcijos.h}!failoSpausdinimas@{failoSpausdinimas}|hyperpage}{21}
+\indexentry{failoSpausdinimas@{failoSpausdinimas}!funkcijos.h@{funkcijos.h}|hyperpage}{21}
+\indexentry{funkcijos.h@{funkcijos.h}!KonteineriuTyrimas@{KonteineriuTyrimas}|hyperpage}{21}
+\indexentry{KonteineriuTyrimas@{KonteineriuTyrimas}!funkcijos.h@{funkcijos.h}|hyperpage}{21}
+\indexentry{funkcijos.h@{funkcijos.h}!rikiavimas@{rikiavimas}|hyperpage}{21}
+\indexentry{rikiavimas@{rikiavimas}!funkcijos.h@{funkcijos.h}|hyperpage}{21}
+\indexentry{funkcijos.h@{funkcijos.h}!skaitymas@{skaitymas}|hyperpage}{22}
+\indexentry{skaitymas@{skaitymas}!funkcijos.h@{funkcijos.h}|hyperpage}{22}
+\indexentry{funkcijos.h@{funkcijos.h}!spausdinimas@{spausdinimas}|hyperpage}{22}
+\indexentry{spausdinimas@{spausdinimas}!funkcijos.h@{funkcijos.h}|hyperpage}{22}
+\indexentry{funkcijos.h@{funkcijos.h}!StudentuPadalinimas@{StudentuPadalinimas}|hyperpage}{22}
+\indexentry{StudentuPadalinimas@{StudentuPadalinimas}!funkcijos.h@{funkcijos.h}|hyperpage}{22}
+\indexentry{funkcijos.h@{funkcijos.h}!StudentuPadalinimas2@{StudentuPadalinimas2}|hyperpage}{23}
+\indexentry{StudentuPadalinimas2@{StudentuPadalinimas2}!funkcijos.h@{funkcijos.h}|hyperpage}{23}
+\indexentry{funkcijos.h@{funkcijos.h}!StudentuPadalinimas3@{StudentuPadalinimas3}|hyperpage}{23}
+\indexentry{StudentuPadalinimas3@{StudentuPadalinimas3}!funkcijos.h@{funkcijos.h}|hyperpage}{23}
+\indexentry{funkcijos.h@{funkcijos.h}!tyrimasAntras@{tyrimasAntras}|hyperpage}{23}
+\indexentry{tyrimasAntras@{tyrimasAntras}!funkcijos.h@{funkcijos.h}|hyperpage}{23}
+\indexentry{funkcijos.h@{funkcijos.h}!tyrimasPirmas@{tyrimasPirmas}|hyperpage}{24}
+\indexentry{tyrimasPirmas@{tyrimasPirmas}!funkcijos.h@{funkcijos.h}|hyperpage}{24}
+\indexentry{include/funkcijos.h@{include/funkcijos.h}|hyperpage}{24}
+\indexentry{include/studentas.h@{include/studentas.h}|hyperpage}{28}
+\indexentry{include/studentas.h@{include/studentas.h}|hyperpage}{28}
+\indexentry{include/vector.h@{include/vector.h}|hyperpage}{30}
+\indexentry{vector.h@{vector.h}!operator"!=@{operator"!=}|hyperpage}{30}
+\indexentry{operator"!=@{operator"!=}!vector.h@{vector.h}|hyperpage}{30}
+\indexentry{vector.h@{vector.h}!operator==@{operator==}|hyperpage}{30}
+\indexentry{operator==@{operator==}!vector.h@{vector.h}|hyperpage}{30}
+\indexentry{include/vector.h@{include/vector.h}|hyperpage}{31}
+\indexentry{include/zmogus.h@{include/zmogus.h}|hyperpage}{35}
+\indexentry{include/zmogus.h@{include/zmogus.h}|hyperpage}{35}
+\indexentry{src/funkcijos.cpp@{src/funkcijos.cpp}|hyperpage}{36}
+\indexentry{funkcijos.cpp@{funkcijos.cpp}!failoGeneravimas@{failoGeneravimas}|hyperpage}{37}
+\indexentry{failoGeneravimas@{failoGeneravimas}!funkcijos.cpp@{funkcijos.cpp}|hyperpage}{37}
+\indexentry{funkcijos.cpp@{funkcijos.cpp}!failoSpausdinimas@{failoSpausdinimas}|hyperpage}{37}
+\indexentry{failoSpausdinimas@{failoSpausdinimas}!funkcijos.cpp@{funkcijos.cpp}|hyperpage}{37}
+\indexentry{funkcijos.cpp@{funkcijos.cpp}!spausdinimas@{spausdinimas}|hyperpage}{37}
+\indexentry{spausdinimas@{spausdinimas}!funkcijos.cpp@{funkcijos.cpp}|hyperpage}{37}
+\indexentry{funkcijos.cpp@{funkcijos.cpp}!tyrimasAntras@{tyrimasAntras}|hyperpage}{37}
+\indexentry{tyrimasAntras@{tyrimasAntras}!funkcijos.cpp@{funkcijos.cpp}|hyperpage}{37}
+\indexentry{funkcijos.cpp@{funkcijos.cpp}!tyrimasPirmas@{tyrimasPirmas}|hyperpage}{38}
+\indexentry{tyrimasPirmas@{tyrimasPirmas}!funkcijos.cpp@{funkcijos.cpp}|hyperpage}{38}
+\indexentry{src/main.cpp@{src/main.cpp}|hyperpage}{38}
+\indexentry{main.cpp@{main.cpp}!main@{main}|hyperpage}{38}
+\indexentry{main@{main}!main.cpp@{main.cpp}|hyperpage}{38}
+\indexentry{main.cpp@{main.cpp}!pavardes@{pavardes}|hyperpage}{39}
+\indexentry{pavardes@{pavardes}!main.cpp@{main.cpp}|hyperpage}{39}
+\indexentry{main.cpp@{main.cpp}!vardai@{vardai}|hyperpage}{39}
+\indexentry{vardai@{vardai}!main.cpp@{main.cpp}|hyperpage}{39}
