@@ -1,6 +1,10 @@
+#ifndef VECTOR_H
+#define VECTOR_H
+
 #include <iostream>
 #include <cstddef>
 #include <iterator>
+
 
 template<typename T>
 class Vector
@@ -220,6 +224,30 @@ public:
         return begin() + index;
     }
 
+    template<typename InputIt>
+    iterator insert(const_iterator pos, InputIt first, InputIt last)
+    {
+        size_type index = pos - begin();
+        size_type count = std::distance(first, last);
+
+        while(size_ + count > capacity_)
+        {
+            ReAlloc(capacity_ == 0 ? 1 : capacity_ * 2);
+        }
+
+        for(size_type i = size_ + count -1; i >= index + count; --i)
+        {
+            data_[i] = data_[i - count];
+        }
+        size_type i = index;
+        for(auto it = first; it != last; ++it, ++i)
+        {
+            data_[i] = *it;
+        }
+        size_ += count;
+        return begin() + index;
+    }
+
     iterator erase(const_iterator pos)
     {
         size_type index = pos - begin();
@@ -231,6 +259,20 @@ public:
         --size_;
 
         return begin() + index;
+    }
+
+    iterator erase(const_iterator first, const_iterator last)
+    {
+        size_type index_first = first - begin();
+        size_type index_last = last - begin();
+        size_type count = index_last - index_first;
+
+        for(size_type i = index_first; i < size_ - count; i++)
+        {
+            data_[i] = std::move(data_[i + count]);
+        }
+        size_ -= count;
+        return begin() + index_first;
     }
 
     void swap(Vector& other)
@@ -337,3 +379,5 @@ public:
         }
         return false;
     }
+
+    #endif

@@ -180,6 +180,22 @@ TEST(VectorTest, Insert)
     EXPECT_EQ(v[1], 100);
     EXPECT_EQ(v[3], 3);
 }
+TEST(VectorTest, InsertRange)
+{
+    Vector<int> v = {1, 2, 3};
+    Vector<int> extra = {10, 20};
+    v.insert(v.begin() + 1, extra.begin(), extra.end());
+    EXPECT_EQ(v.size(), 5);
+    EXPECT_EQ(v[1], 10);
+    EXPECT_EQ(v[2], 20);
+}
+TEST(Vector, EraseRange)
+{
+    Vector<int> v = {1, 2, 3, 4, 5};
+    v.erase(v.begin() + 1, v.begin() + 3);
+    EXPECT_EQ(v.size(), 3);
+    EXPECT_EQ(v[1], 4);
+}
 TEST(VectorTest, Erase)
 {
     Vector<int> v = {1, 2, 3};
