@@ -1,4 +1,5 @@
 #include <iostream>
+#include <windows.h>
 #include <ctime>
 #include <cstdlib>
 #include <stdexcept>
@@ -16,6 +17,8 @@ const Vector<std::string> pavardes = {"Brazdeikis" , "Kazlauskas", "Macijauskas"
 
 int main(){
     
+    SetConsoleOutputCP(65001);  // UTF-8 output
+    SetConsoleCP(65001); 
     Vector<Studentas> A;
     Vector<Studentas> vargsai;
     Vector<Studentas> kietekai;
